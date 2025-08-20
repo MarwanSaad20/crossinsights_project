@@ -1,0 +1,56 @@
+{
+    // 🐍 إعدادات بايثون
+    "python.defaultInterpreterPath": "C:\\Users\\PC\\anaconda3\\envs\\crossinsights\\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python.condaPath": "C:\\Users\\PC\\anaconda3\\Scripts\\conda.exe",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+
+    // 📑 تنسيق الكود
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always"
+    },
+
+    // 🔍 تحسين البحث
+    "search.exclude": {
+        "**/.git": true,
+        "**/.venv": true,
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.mypy_cache": true
+    },
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.askForKernelRestart": false,
+
+    // 💡 مظهر وتجربة
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Default Dark+",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+
+    // ⚡️ Terminal - الإعدادات النهائية بعد تعطيل base
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "conda activate crossinsights"
+            ]
+        }
+    },
+
+    // Git
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "jupyter.interactiveWindow.creationMode": "perFile"
+}

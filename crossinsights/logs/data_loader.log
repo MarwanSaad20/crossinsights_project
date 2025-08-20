@@ -1,0 +1,400 @@
+2025-08-20 14:54:54,734 - INFO - Starting CrossInsights pipeline...
+2025-08-20 14:54:54,734 - INFO - Loading configuration...
+2025-08-20 14:54:54,734 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:54:54,736 - INFO - Configuration loaded successfully
+2025-08-20 14:54:54,737 - INFO - Loading raw data...
+2025-08-20 14:54:54,737 - INFO - Loading raw data...
+2025-08-20 14:54:54,737 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:54:54,739 - INFO - Configuration loaded successfully
+2025-08-20 14:54:54,739 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:54:54,749 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:54:54,749 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:54:54,752 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:54:54,752 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:54:54,761 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:54:54,761 - INFO - Raw data loaded successfully
+2025-08-20 14:54:54,761 - INFO - Preprocessing data...
+2025-08-20 14:54:54,762 - INFO - Preprocessing all datasets...
+2025-08-20 14:54:54,762 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:54:54,764 - INFO - Configuration loaded successfully
+2025-08-20 14:54:54,764 - INFO - Loading raw data...
+2025-08-20 14:54:54,764 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:54:54,766 - INFO - Configuration loaded successfully
+2025-08-20 14:54:54,766 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:54:54,768 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:54:54,768 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:54:54,770 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:54:54,771 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:54:54,778 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:54:54,778 - INFO - Raw data loaded successfully
+2025-08-20 14:54:54,779 - INFO - Cleaning users data...
+2025-08-20 14:54:54,787 - INFO - Users cleaned: 0 missing age values filled
+2025-08-20 14:54:54,787 - INFO - Cleaning movies data...
+2025-08-20 14:54:54,797 - INFO - Movies cleaned: 0 missing titles filled, 358 genres encoded
+2025-08-20 14:54:54,798 - INFO - Cleaning ratings data...
+2025-08-20 14:54:54,805 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-20 14:54:54,806 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 14:54:54,809 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 14:54:54,809 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 14:54:54,848 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 14:54:54,849 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 14:54:54,877 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 14:54:54,878 - INFO - All datasets preprocessed and saved
+2025-08-20 14:54:54,878 - INFO - Performing exploratory data analysis...
+2025-08-20 14:54:54,879 - INFO - Generating rating distribution plot
+2025-08-20 14:54:55,348 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-20 14:54:55,348 - INFO - Generating genre popularity plot
+2025-08-20 14:54:55,349 - ERROR - Column 'genres' not found in movies DataFrame
+2025-08-20 14:54:55,349 - ERROR - Pipeline failed: Column 'genres' not found in movies DataFrame
+2025-08-20 14:56:34,513 - INFO - Starting CrossInsights pipeline...
+2025-08-20 14:56:34,513 - INFO - Loading configuration...
+2025-08-20 14:56:34,514 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:56:34,515 - INFO - Configuration loaded successfully
+2025-08-20 14:56:34,516 - INFO - Loading raw data...
+2025-08-20 14:56:34,516 - INFO - Loading raw data...
+2025-08-20 14:56:34,516 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:56:34,518 - INFO - Configuration loaded successfully
+2025-08-20 14:56:34,518 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:56:34,521 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:56:34,521 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:56:34,524 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:56:34,524 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:56:34,532 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:56:34,532 - INFO - Raw data loaded successfully
+2025-08-20 14:56:34,533 - INFO - Preprocessing data...
+2025-08-20 14:56:34,533 - INFO - Preprocessing all datasets...
+2025-08-20 14:56:34,534 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:56:34,537 - INFO - Configuration loaded successfully
+2025-08-20 14:56:34,537 - INFO - Loading raw data...
+2025-08-20 14:56:34,538 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 14:56:34,540 - INFO - Configuration loaded successfully
+2025-08-20 14:56:34,540 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:56:34,542 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 14:56:34,542 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:56:34,544 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 14:56:34,544 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:56:34,552 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 14:56:34,552 - INFO - Raw data loaded successfully
+2025-08-20 14:56:34,552 - INFO - Cleaning users data...
+2025-08-20 14:56:34,554 - INFO - Users cleaned: 0 missing age values filled
+2025-08-20 14:56:34,555 - INFO - Cleaning movies data...
+2025-08-20 14:56:34,559 - INFO - Movies cleaned: 0 missing titles filled, 358 genres encoded
+2025-08-20 14:56:34,559 - INFO - Cleaning ratings data...
+2025-08-20 14:56:34,562 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-20 14:56:34,563 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 14:56:34,566 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 14:56:34,566 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 14:56:34,607 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 14:56:34,607 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 14:56:34,634 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 14:56:34,635 - INFO - All datasets preprocessed and saved
+2025-08-20 14:56:34,635 - INFO - Performing exploratory data analysis...
+2025-08-20 14:56:34,635 - INFO - Generating rating distribution plot
+2025-08-20 14:56:34,870 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-20 14:56:34,870 - INFO - Generating genre popularity plot
+2025-08-20 14:56:34,871 - ERROR - No genre columns found in movies DataFrame
+2025-08-20 14:56:34,871 - ERROR - Pipeline failed: No genre columns found in movies DataFrame
+2025-08-20 15:09:38,018 - INFO - Starting CrossInsights pipeline...
+2025-08-20 15:09:38,019 - INFO - Loading configuration...
+2025-08-20 15:09:38,019 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:09:38,021 - INFO - Configuration loaded successfully
+2025-08-20 15:09:38,021 - INFO - Loading raw data...
+2025-08-20 15:09:38,021 - INFO - Loading raw data...
+2025-08-20 15:09:38,021 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:09:38,022 - INFO - Configuration loaded successfully
+2025-08-20 15:09:38,023 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:09:38,033 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:09:38,033 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:09:38,037 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:09:38,037 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:09:38,044 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:09:38,045 - INFO - Raw data loaded successfully
+2025-08-20 15:09:38,045 - INFO - Preprocessing data...
+2025-08-20 15:09:38,045 - INFO - Preprocessing all datasets...
+2025-08-20 15:09:38,045 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:09:38,047 - INFO - Configuration loaded successfully
+2025-08-20 15:09:38,047 - INFO - Loading raw data...
+2025-08-20 15:09:38,047 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:09:38,049 - INFO - Configuration loaded successfully
+2025-08-20 15:09:38,050 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:09:38,052 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:09:38,052 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:09:38,054 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:09:38,054 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:09:38,062 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:09:38,062 - INFO - Raw data loaded successfully
+2025-08-20 15:09:38,062 - INFO - Cleaning users data...
+2025-08-20 15:09:38,064 - INFO - No missing values in users
+2025-08-20 15:09:38,069 - INFO - Users cleaned: age median filled, other missing values replaced with 'Unknown'
+2025-08-20 15:09:38,069 - INFO - Cleaning movies data...
+2025-08-20 15:09:38,071 - INFO - No missing values in movies
+2025-08-20 15:09:38,080 - INFO - Movies cleaned: 358 genres encoded
+2025-08-20 15:09:38,081 - INFO - Cleaning ratings data...
+2025-08-20 15:09:38,082 - INFO - No missing values in ratings
+2025-08-20 15:09:38,089 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-20 15:09:38,090 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 15:09:38,094 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 15:09:38,094 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 15:09:38,131 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 15:09:38,132 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 15:09:38,158 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 15:09:38,159 - INFO - All datasets preprocessed and saved
+2025-08-20 15:09:38,159 - INFO - Performing exploratory data analysis...
+2025-08-20 15:09:38,159 - INFO - Generating rating distribution plot
+2025-08-20 15:09:38,432 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-20 15:09:38,436 - INFO - Generating genre popularity plot
+2025-08-20 15:09:38,437 - ERROR - No genre columns found in movies DataFrame
+2025-08-20 15:09:38,438 - ERROR - Pipeline failed: No genre columns found in movies DataFrame
+2025-08-20 15:12:44,226 - INFO - Starting CrossInsights pipeline...
+2025-08-20 15:12:44,226 - INFO - Loading configuration...
+2025-08-20 15:12:44,227 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:12:44,228 - INFO - Configuration loaded successfully
+2025-08-20 15:12:44,229 - INFO - Loading raw data...
+2025-08-20 15:12:44,229 - INFO - Loading raw data...
+2025-08-20 15:12:44,229 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:12:44,231 - INFO - Configuration loaded successfully
+2025-08-20 15:12:44,231 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:12:44,234 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:12:44,235 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:12:44,238 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:12:44,238 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:12:44,244 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:12:44,245 - INFO - Raw data loaded successfully
+2025-08-20 15:12:44,245 - INFO - Preprocessing data...
+2025-08-20 15:12:44,245 - INFO - Preprocessing all datasets...
+2025-08-20 15:12:44,246 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:12:44,247 - INFO - Configuration loaded successfully
+2025-08-20 15:12:44,248 - INFO - Loading raw data...
+2025-08-20 15:12:44,248 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:12:44,250 - INFO - Configuration loaded successfully
+2025-08-20 15:12:44,251 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:12:44,253 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:12:44,254 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:12:44,255 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:12:44,256 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:12:44,263 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:12:44,263 - INFO - Raw data loaded successfully
+2025-08-20 15:12:44,263 - INFO - Cleaning users data...
+2025-08-20 15:12:44,264 - INFO - No missing values in users
+2025-08-20 15:12:44,266 - INFO - Users cleaned: age median filled, other missing values replaced with 'Unknown'
+2025-08-20 15:12:44,267 - INFO - Cleaning movies data...
+2025-08-20 15:12:44,268 - INFO - No missing values in movies
+2025-08-20 15:12:44,274 - INFO - Movies cleaned: 358 genres encoded
+2025-08-20 15:12:44,274 - INFO - Genre columns: ['Action', 'Action, Adventure', 'Action, Adventure, Animation', 'Action, Adventure, Horror', 'Action, Adventure, Romance', 'Action, Adventure, Sci-Fi', 'Action, Adventure, Thriller', 'Action, Animation', 'Action, Animation, Documentary', 'Action, Animation, Horror', 'Action, Animation, Romance', 'Action, Animation, Sci-Fi', 'Action, Comedy', 'Action, Comedy, Documentary', 'Action, Comedy, Horror', 'Action, Comedy, Thriller', 'Action, Documentary', 'Action, Documentary, Animation', 'Action, Documentary, Drama', 'Action, Documentary, Horror', 'Action, Documentary, Thriller', 'Action, Drama', 'Action, Drama, Adventure', 'Action, Drama, Thriller', 'Action, Horror', 'Action, Horror, Documentary', 'Action, Horror, Romance', 'Action, Horror, Sci-Fi', 'Action, Romance', 'Action, Romance, Drama', 'Action, Romance, Thriller', 'Action, Sci-Fi', 'Action, Sci-Fi, Animation', 'Action, Sci-Fi, Comedy', 'Action, Sci-Fi, Thriller', 'Action, Thriller', 'Action, Thriller, Documentary', 'Action, Thriller, Horror', 'Action, Thriller, Romance', 'Adventure', 'Adventure, Action', 'Adventure, Action, Comedy', 'Adventure, Action, Documentary', 'Adventure, Animation', 'Adventure, Animation, Comedy', 'Adventure, Animation, Documentary', 'Adventure, Animation, Thriller', 'Adventure, Comedy', 'Adventure, Comedy, Drama', 'Adventure, Comedy, Horror', 'Adventure, Comedy, Romance', 'Adventure, Documentary', 'Adventure, Documentary, Horror', 'Adventure, Documentary, Romance', 'Adventure, Drama, Documentary', 'Adventure, Drama, Horror', 'Adventure, Drama, Sci-Fi', 'Adventure, Horror', 'Adventure, Horror, Action', 'Adventure, Horror, Thriller', 'Adventure, Romance', 'Adventure, Romance, Action', 'Adventure, Romance, Drama', 'Adventure, Romance, Sci-Fi', 'Adventure, Romance, Thriller', 'Adventure, Sci-Fi, Action', 'Adventure, Sci-Fi, Comedy', 'Adventure, Sci-Fi, Thriller', 'Adventure, Thriller', 'Adventure, Thriller, Comedy', 'Adventure, Thriller, Romance', 'Animation', 'Animation, Action', 'Animation, Action, Adventure', 'Animation, Action, Documentary', 'Animation, Action, Drama', 'Animation, Adventure', 'Animation, Adventure, Romance', 'Animation, Comedy', 'Animation, Comedy, Documentary', 'Animation, Comedy, Horror', 'Animation, Documentary', 'Animation, Documentary, Action', 'Animation, Documentary, Drama', 'Animation, Documentary, Horror', 'Animation, Documentary, Romance', 'Animation, Drama', 'Animation, Drama, Adventure', 'Animation, Drama, Romance', 'Animation, Horror', 'Animation, Horror, Action', 'Animation, Horror, Adventure', 'Animation, Horror, Drama', 'Animation, Horror, Romance', 'Animation, Horror, Sci-Fi', 'Animation, Romance', 'Animation, Romance, Comedy', 'Animation, Romance, Documentary', 'Animation, Romance, Thriller', 'Animation, Sci-Fi', 'Animation, Sci-Fi, Comedy', 'Animation, Sci-Fi, Documentary', 'Animation, Sci-Fi, Romance', 'Animation, Sci-Fi, Thriller', 'Animation, Thriller', 'Animation, Thriller, Documentary', 'Animation, Thriller, Drama', 'Animation, Thriller, Horror', 'Comedy', 'Comedy, Action', 'Comedy, Action, Animation', 'Comedy, Adventure', 'Comedy, Adventure, Animation', 'Comedy, Animation', 'Comedy, Animation, Action', 'Comedy, Animation, Romance', 'Comedy, Documentary', 'Comedy, Documentary, Animation', 'Comedy, Documentary, Horror', 'Comedy, Documentary, Sci-Fi', 'Comedy, Drama', 'Comedy, Drama, Action', 'Comedy, Drama, Documentary', 'Comedy, Drama, Horror', 'Comedy, Horror', 'Comedy, Horror, Action', 'Comedy, Horror, Drama', 'Comedy, Horror, Sci-Fi', 'Comedy, Horror, Thriller', 'Comedy, Romance', 'Comedy, Romance, Animation', 'Comedy, Romance, Documentary', 'Comedy, Romance, Sci-Fi', 'Comedy, Sci-Fi', 'Comedy, Sci-Fi, Adventure', 'Comedy, Sci-Fi, Animation', 'Comedy, Sci-Fi, Documentary', 'Comedy, Sci-Fi, Romance', 'Comedy, Thriller', 'Comedy, Thriller, Adventure', 'Comedy, Thriller, Drama', 'Comedy, Thriller, Horror', 'Comedy, Thriller, Sci-Fi', 'Documentary', 'Documentary, Action', 'Documentary, Action, Adventure', 'Documentary, Action, Romance', 'Documentary, Adventure', 'Documentary, Adventure, Action', 'Documentary, Adventure, Comedy', 'Documentary, Adventure, Romance', 'Documentary, Animation', 'Documentary, Animation, Drama', 'Documentary, Animation, Horror', 'Documentary, Animation, Romance', 'Documentary, Animation, Sci-Fi', 'Documentary, Comedy', 'Documentary, Comedy, Action', 'Documentary, Comedy, Thriller', 'Documentary, Drama', 'Documentary, Drama, Action', 'Documentary, Drama, Adventure', 'Documentary, Drama, Thriller', 'Documentary, Horror', 'Documentary, Horror, Romance', 'Documentary, Romance', 'Documentary, Romance, Action', 'Documentary, Romance, Adventure', 'Documentary, Sci-Fi', 'Documentary, Sci-Fi, Adventure', 'Documentary, Sci-Fi, Comedy', 'Documentary, Sci-Fi, Horror', 'Documentary, Sci-Fi, Thriller', 'Documentary, Thriller', 'Documentary, Thriller, Adventure', 'Documentary, Thriller, Animation', 'Drama', 'Drama, Action', 'Drama, Action, Animation', 'Drama, Action, Documentary', 'Drama, Action, Horror', 'Drama, Action, Romance', 'Drama, Adventure', 'Drama, Adventure, Action', 'Drama, Adventure, Comedy', 'Drama, Adventure, Documentary', 'Drama, Adventure, Romance', 'Drama, Animation', 'Drama, Animation, Sci-Fi', 'Drama, Comedy', 'Drama, Comedy, Adventure', 'Drama, Comedy, Thriller', 'Drama, Documentary', 'Drama, Documentary, Romance', 'Drama, Documentary, Thriller', 'Drama, Horror, Action', 'Drama, Horror, Adventure', 'Drama, Horror, Comedy', 'Drama, Horror, Sci-Fi', 'Drama, Romance', 'Drama, Romance, Action', 'Drama, Romance, Adventure', 'Drama, Romance, Thriller', 'Drama, Sci-Fi', 'Drama, Sci-Fi, Comedy', 'Drama, Sci-Fi, Documentary', 'Drama, Thriller', 'Drama, Thriller, Action', 'Drama, Thriller, Documentary', 'Horror', 'Horror, Action', 'Horror, Action, Adventure', 'Horror, Action, Romance', 'Horror, Action, Sci-Fi', 'Horror, Adventure', 'Horror, Adventure, Action', 'Horror, Adventure, Comedy', 'Horror, Adventure, Documentary', 'Horror, Adventure, Romance', 'Horror, Adventure, Thriller', 'Horror, Animation', 'Horror, Animation, Action', 'Horror, Animation, Sci-Fi', 'Horror, Comedy', 'Horror, Comedy, Adventure', 'Horror, Comedy, Thriller', 'Horror, Documentary', 'Horror, Documentary, Action', 'Horror, Documentary, Adventure', 'Horror, Documentary, Comedy', 'Horror, Documentary, Drama', 'Horror, Documentary, Romance', 'Horror, Drama', 'Horror, Drama, Adventure', 'Horror, Drama, Comedy', 'Horror, Drama, Documentary', 'Horror, Romance', 'Horror, Romance, Action', 'Horror, Romance, Documentary', 'Horror, Romance, Thriller', 'Horror, Sci-Fi', 'Horror, Sci-Fi, Adventure', 'Horror, Sci-Fi, Animation', 'Horror, Sci-Fi, Romance', 'Horror, Thriller', 'Horror, Thriller, Sci-Fi', 'Romance', 'Romance, Action', 'Romance, Action, Comedy', 'Romance, Action, Drama', 'Romance, Action, Sci-Fi', 'Romance, Adventure', 'Romance, Adventure, Comedy', 'Romance, Adventure, Thriller', 'Romance, Animation', 'Romance, Animation, Adventure', 'Romance, Animation, Comedy', 'Romance, Animation, Documentary', 'Romance, Animation, Drama', 'Romance, Animation, Thriller', 'Romance, Comedy', 'Romance, Comedy, Animation', 'Romance, Comedy, Documentary', 'Romance, Comedy, Sci-Fi', 'Romance, Comedy, Thriller', 'Romance, Documentary', 'Romance, Documentary, Action', 'Romance, Documentary, Animation', 'Romance, Documentary, Horror', 'Romance, Documentary, Thriller', 'Romance, Drama', 'Romance, Drama, Action', 'Romance, Horror', 'Romance, Horror, Action', 'Romance, Horror, Documentary', 'Romance, Horror, Drama', 'Romance, Sci-Fi, Adventure', 'Romance, Sci-Fi, Comedy', 'Romance, Sci-Fi, Documentary', 'Romance, Sci-Fi, Drama', 'Romance, Thriller', 'Romance, Thriller, Action', 'Romance, Thriller, Adventure', 'Romance, Thriller, Drama', 'Romance, Thriller, Horror', 'Romance, Thriller, Sci-Fi', 'Sci-Fi', 'Sci-Fi, Action', 'Sci-Fi, Action, Thriller', 'Sci-Fi, Adventure', 'Sci-Fi, Adventure, Action', 'Sci-Fi, Adventure, Comedy', 'Sci-Fi, Adventure, Drama', 'Sci-Fi, Adventure, Horror', 'Sci-Fi, Animation', 'Sci-Fi, Animation, Action', 'Sci-Fi, Animation, Adventure', 'Sci-Fi, Animation, Comedy', 'Sci-Fi, Animation, Horror', 'Sci-Fi, Comedy', 'Sci-Fi, Comedy, Adventure', 'Sci-Fi, Comedy, Animation', 'Sci-Fi, Comedy, Documentary', 'Sci-Fi, Comedy, Thriller', 'Sci-Fi, Documentary', 'Sci-Fi, Documentary, Action', 'Sci-Fi, Documentary, Drama', 'Sci-Fi, Drama', 'Sci-Fi, Drama, Animation', 'Sci-Fi, Horror', 'Sci-Fi, Horror, Action', 'Sci-Fi, Horror, Thriller', 'Sci-Fi, Romance', 'Sci-Fi, Romance, Action', 'Sci-Fi, Romance, Animation', 'Sci-Fi, Romance, Comedy', 'Sci-Fi, Romance, Documentary', 'Sci-Fi, Romance, Horror', 'Sci-Fi, Romance, Thriller', 'Sci-Fi, Thriller', 'Sci-Fi, Thriller, Action', 'Sci-Fi, Thriller, Animation', 'Sci-Fi, Thriller, Drama', 'Sci-Fi, Thriller, Horror', 'Thriller', 'Thriller, Action', 'Thriller, Action, Adventure', 'Thriller, Action, Animation', 'Thriller, Action, Romance', 'Thriller, Adventure', 'Thriller, Adventure, Action', 'Thriller, Adventure, Comedy', 'Thriller, Adventure, Documentary', 'Thriller, Adventure, Drama', 'Thriller, Animation', 'Thriller, Animation, Romance', 'Thriller, Comedy', 'Thriller, Comedy, Adventure', 'Thriller, Comedy, Romance', 'Thriller, Documentary', 'Thriller, Documentary, Adventure', 'Thriller, Documentary, Drama', 'Thriller, Documentary, Horror', 'Thriller, Documentary, Romance', 'Thriller, Drama', 'Thriller, Drama, Adventure', 'Thriller, Drama, Horror', 'Thriller, Horror', 'Thriller, Horror, Adventure', 'Thriller, Horror, Animation', 'Thriller, Horror, Documentary', 'Thriller, Romance', 'Thriller, Romance, Action', 'Thriller, Romance, Adventure', 'Thriller, Romance, Horror', 'Thriller, Romance, Sci-Fi', 'Thriller, Sci-Fi', 'Thriller, Sci-Fi, Animation']
+2025-08-20 15:12:44,276 - INFO - Cleaning ratings data...
+2025-08-20 15:12:44,277 - INFO - No missing values in ratings
+2025-08-20 15:12:44,280 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-20 15:12:44,280 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 15:12:44,284 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 15:12:44,285 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 15:12:44,326 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 15:12:44,327 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 15:12:44,354 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 15:12:44,354 - INFO - All datasets preprocessed and saved
+2025-08-20 15:12:44,354 - INFO - Performing exploratory data analysis...
+2025-08-20 15:12:44,354 - INFO - Generating rating distribution plot
+2025-08-20 15:12:44,588 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-20 15:12:44,589 - INFO - Generating genre popularity plot
+2025-08-20 15:12:45,704 - INFO - Genre popularity plot saved to C:/crossinsights_project/crossinsights/analysis/genre_popularity.png
+2025-08-20 15:12:45,705 - INFO - Generating age vs ratings plot
+2025-08-20 15:12:45,855 - INFO - Age vs ratings plot saved to C:/crossinsights_project/crossinsights/analysis/age_vs_ratings.png
+2025-08-20 15:12:45,855 - INFO - Training model...
+2025-08-20 15:12:45,855 - INFO - Training SVD model...
+2025-08-20 15:12:45,856 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:12:45,857 - INFO - Configuration loaded successfully
+2025-08-20 15:12:45,874 - ERROR - Pipeline failed: Index contains duplicate entries, cannot reshape
+2025-08-20 15:20:10,652 - INFO - Starting CrossInsights pipeline...
+2025-08-20 15:20:10,652 - INFO - Loading configuration...
+2025-08-20 15:20:10,652 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:20:10,654 - INFO - Configuration loaded successfully
+2025-08-20 15:20:10,654 - INFO - Loading raw data...
+2025-08-20 15:20:10,654 - INFO - Loading raw data...
+2025-08-20 15:20:10,655 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:20:10,656 - INFO - Configuration loaded successfully
+2025-08-20 15:20:10,656 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:20:10,658 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:20:10,658 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:20:10,662 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:20:10,662 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:20:10,671 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:20:10,672 - INFO - Raw data loaded successfully
+2025-08-20 15:20:10,672 - INFO - Preprocessing data...
+2025-08-20 15:20:10,672 - INFO - Preprocessing all datasets...
+2025-08-20 15:20:10,672 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:20:10,674 - INFO - Configuration loaded successfully
+2025-08-20 15:20:10,675 - INFO - Loading raw data...
+2025-08-20 15:20:10,675 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:20:10,678 - INFO - Configuration loaded successfully
+2025-08-20 15:20:10,678 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:20:10,681 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 15:20:10,681 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:20:10,683 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 15:20:10,683 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:20:10,689 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 15:20:10,690 - INFO - Raw data loaded successfully
+2025-08-20 15:20:10,690 - INFO - Cleaning users data...
+2025-08-20 15:20:10,691 - INFO - No missing values in users
+2025-08-20 15:20:10,692 - INFO - Users cleaned: age median filled, other missing values replaced with 'Unknown'
+2025-08-20 15:20:10,693 - INFO - Cleaning movies data...
+2025-08-20 15:20:10,694 - INFO - No missing values in movies
+2025-08-20 15:20:10,699 - INFO - Movies cleaned: 358 genres encoded
+2025-08-20 15:20:10,700 - INFO - Genre columns: ['Action', 'Action, Adventure', 'Action, Adventure, Animation', 'Action, Adventure, Horror', 'Action, Adventure, Romance', 'Action, Adventure, Sci-Fi', 'Action, Adventure, Thriller', 'Action, Animation', 'Action, Animation, Documentary', 'Action, Animation, Horror', 'Action, Animation, Romance', 'Action, Animation, Sci-Fi', 'Action, Comedy', 'Action, Comedy, Documentary', 'Action, Comedy, Horror', 'Action, Comedy, Thriller', 'Action, Documentary', 'Action, Documentary, Animation', 'Action, Documentary, Drama', 'Action, Documentary, Horror', 'Action, Documentary, Thriller', 'Action, Drama', 'Action, Drama, Adventure', 'Action, Drama, Thriller', 'Action, Horror', 'Action, Horror, Documentary', 'Action, Horror, Romance', 'Action, Horror, Sci-Fi', 'Action, Romance', 'Action, Romance, Drama', 'Action, Romance, Thriller', 'Action, Sci-Fi', 'Action, Sci-Fi, Animation', 'Action, Sci-Fi, Comedy', 'Action, Sci-Fi, Thriller', 'Action, Thriller', 'Action, Thriller, Documentary', 'Action, Thriller, Horror', 'Action, Thriller, Romance', 'Adventure', 'Adventure, Action', 'Adventure, Action, Comedy', 'Adventure, Action, Documentary', 'Adventure, Animation', 'Adventure, Animation, Comedy', 'Adventure, Animation, Documentary', 'Adventure, Animation, Thriller', 'Adventure, Comedy', 'Adventure, Comedy, Drama', 'Adventure, Comedy, Horror', 'Adventure, Comedy, Romance', 'Adventure, Documentary', 'Adventure, Documentary, Horror', 'Adventure, Documentary, Romance', 'Adventure, Drama, Documentary', 'Adventure, Drama, Horror', 'Adventure, Drama, Sci-Fi', 'Adventure, Horror', 'Adventure, Horror, Action', 'Adventure, Horror, Thriller', 'Adventure, Romance', 'Adventure, Romance, Action', 'Adventure, Romance, Drama', 'Adventure, Romance, Sci-Fi', 'Adventure, Romance, Thriller', 'Adventure, Sci-Fi, Action', 'Adventure, Sci-Fi, Comedy', 'Adventure, Sci-Fi, Thriller', 'Adventure, Thriller', 'Adventure, Thriller, Comedy', 'Adventure, Thriller, Romance', 'Animation', 'Animation, Action', 'Animation, Action, Adventure', 'Animation, Action, Documentary', 'Animation, Action, Drama', 'Animation, Adventure', 'Animation, Adventure, Romance', 'Animation, Comedy', 'Animation, Comedy, Documentary', 'Animation, Comedy, Horror', 'Animation, Documentary', 'Animation, Documentary, Action', 'Animation, Documentary, Drama', 'Animation, Documentary, Horror', 'Animation, Documentary, Romance', 'Animation, Drama', 'Animation, Drama, Adventure', 'Animation, Drama, Romance', 'Animation, Horror', 'Animation, Horror, Action', 'Animation, Horror, Adventure', 'Animation, Horror, Drama', 'Animation, Horror, Romance', 'Animation, Horror, Sci-Fi', 'Animation, Romance', 'Animation, Romance, Comedy', 'Animation, Romance, Documentary', 'Animation, Romance, Thriller', 'Animation, Sci-Fi', 'Animation, Sci-Fi, Comedy', 'Animation, Sci-Fi, Documentary', 'Animation, Sci-Fi, Romance', 'Animation, Sci-Fi, Thriller', 'Animation, Thriller', 'Animation, Thriller, Documentary', 'Animation, Thriller, Drama', 'Animation, Thriller, Horror', 'Comedy', 'Comedy, Action', 'Comedy, Action, Animation', 'Comedy, Adventure', 'Comedy, Adventure, Animation', 'Comedy, Animation', 'Comedy, Animation, Action', 'Comedy, Animation, Romance', 'Comedy, Documentary', 'Comedy, Documentary, Animation', 'Comedy, Documentary, Horror', 'Comedy, Documentary, Sci-Fi', 'Comedy, Drama', 'Comedy, Drama, Action', 'Comedy, Drama, Documentary', 'Comedy, Drama, Horror', 'Comedy, Horror', 'Comedy, Horror, Action', 'Comedy, Horror, Drama', 'Comedy, Horror, Sci-Fi', 'Comedy, Horror, Thriller', 'Comedy, Romance', 'Comedy, Romance, Animation', 'Comedy, Romance, Documentary', 'Comedy, Romance, Sci-Fi', 'Comedy, Sci-Fi', 'Comedy, Sci-Fi, Adventure', 'Comedy, Sci-Fi, Animation', 'Comedy, Sci-Fi, Documentary', 'Comedy, Sci-Fi, Romance', 'Comedy, Thriller', 'Comedy, Thriller, Adventure', 'Comedy, Thriller, Drama', 'Comedy, Thriller, Horror', 'Comedy, Thriller, Sci-Fi', 'Documentary', 'Documentary, Action', 'Documentary, Action, Adventure', 'Documentary, Action, Romance', 'Documentary, Adventure', 'Documentary, Adventure, Action', 'Documentary, Adventure, Comedy', 'Documentary, Adventure, Romance', 'Documentary, Animation', 'Documentary, Animation, Drama', 'Documentary, Animation, Horror', 'Documentary, Animation, Romance', 'Documentary, Animation, Sci-Fi', 'Documentary, Comedy', 'Documentary, Comedy, Action', 'Documentary, Comedy, Thriller', 'Documentary, Drama', 'Documentary, Drama, Action', 'Documentary, Drama, Adventure', 'Documentary, Drama, Thriller', 'Documentary, Horror', 'Documentary, Horror, Romance', 'Documentary, Romance', 'Documentary, Romance, Action', 'Documentary, Romance, Adventure', 'Documentary, Sci-Fi', 'Documentary, Sci-Fi, Adventure', 'Documentary, Sci-Fi, Comedy', 'Documentary, Sci-Fi, Horror', 'Documentary, Sci-Fi, Thriller', 'Documentary, Thriller', 'Documentary, Thriller, Adventure', 'Documentary, Thriller, Animation', 'Drama', 'Drama, Action', 'Drama, Action, Animation', 'Drama, Action, Documentary', 'Drama, Action, Horror', 'Drama, Action, Romance', 'Drama, Adventure', 'Drama, Adventure, Action', 'Drama, Adventure, Comedy', 'Drama, Adventure, Documentary', 'Drama, Adventure, Romance', 'Drama, Animation', 'Drama, Animation, Sci-Fi', 'Drama, Comedy', 'Drama, Comedy, Adventure', 'Drama, Comedy, Thriller', 'Drama, Documentary', 'Drama, Documentary, Romance', 'Drama, Documentary, Thriller', 'Drama, Horror, Action', 'Drama, Horror, Adventure', 'Drama, Horror, Comedy', 'Drama, Horror, Sci-Fi', 'Drama, Romance', 'Drama, Romance, Action', 'Drama, Romance, Adventure', 'Drama, Romance, Thriller', 'Drama, Sci-Fi', 'Drama, Sci-Fi, Comedy', 'Drama, Sci-Fi, Documentary', 'Drama, Thriller', 'Drama, Thriller, Action', 'Drama, Thriller, Documentary', 'Horror', 'Horror, Action', 'Horror, Action, Adventure', 'Horror, Action, Romance', 'Horror, Action, Sci-Fi', 'Horror, Adventure', 'Horror, Adventure, Action', 'Horror, Adventure, Comedy', 'Horror, Adventure, Documentary', 'Horror, Adventure, Romance', 'Horror, Adventure, Thriller', 'Horror, Animation', 'Horror, Animation, Action', 'Horror, Animation, Sci-Fi', 'Horror, Comedy', 'Horror, Comedy, Adventure', 'Horror, Comedy, Thriller', 'Horror, Documentary', 'Horror, Documentary, Action', 'Horror, Documentary, Adventure', 'Horror, Documentary, Comedy', 'Horror, Documentary, Drama', 'Horror, Documentary, Romance', 'Horror, Drama', 'Horror, Drama, Adventure', 'Horror, Drama, Comedy', 'Horror, Drama, Documentary', 'Horror, Romance', 'Horror, Romance, Action', 'Horror, Romance, Documentary', 'Horror, Romance, Thriller', 'Horror, Sci-Fi', 'Horror, Sci-Fi, Adventure', 'Horror, Sci-Fi, Animation', 'Horror, Sci-Fi, Romance', 'Horror, Thriller', 'Horror, Thriller, Sci-Fi', 'Romance', 'Romance, Action', 'Romance, Action, Comedy', 'Romance, Action, Drama', 'Romance, Action, Sci-Fi', 'Romance, Adventure', 'Romance, Adventure, Comedy', 'Romance, Adventure, Thriller', 'Romance, Animation', 'Romance, Animation, Adventure', 'Romance, Animation, Comedy', 'Romance, Animation, Documentary', 'Romance, Animation, Drama', 'Romance, Animation, Thriller', 'Romance, Comedy', 'Romance, Comedy, Animation', 'Romance, Comedy, Documentary', 'Romance, Comedy, Sci-Fi', 'Romance, Comedy, Thriller', 'Romance, Documentary', 'Romance, Documentary, Action', 'Romance, Documentary, Animation', 'Romance, Documentary, Horror', 'Romance, Documentary, Thriller', 'Romance, Drama', 'Romance, Drama, Action', 'Romance, Horror', 'Romance, Horror, Action', 'Romance, Horror, Documentary', 'Romance, Horror, Drama', 'Romance, Sci-Fi, Adventure', 'Romance, Sci-Fi, Comedy', 'Romance, Sci-Fi, Documentary', 'Romance, Sci-Fi, Drama', 'Romance, Thriller', 'Romance, Thriller, Action', 'Romance, Thriller, Adventure', 'Romance, Thriller, Drama', 'Romance, Thriller, Horror', 'Romance, Thriller, Sci-Fi', 'Sci-Fi', 'Sci-Fi, Action', 'Sci-Fi, Action, Thriller', 'Sci-Fi, Adventure', 'Sci-Fi, Adventure, Action', 'Sci-Fi, Adventure, Comedy', 'Sci-Fi, Adventure, Drama', 'Sci-Fi, Adventure, Horror', 'Sci-Fi, Animation', 'Sci-Fi, Animation, Action', 'Sci-Fi, Animation, Adventure', 'Sci-Fi, Animation, Comedy', 'Sci-Fi, Animation, Horror', 'Sci-Fi, Comedy', 'Sci-Fi, Comedy, Adventure', 'Sci-Fi, Comedy, Animation', 'Sci-Fi, Comedy, Documentary', 'Sci-Fi, Comedy, Thriller', 'Sci-Fi, Documentary', 'Sci-Fi, Documentary, Action', 'Sci-Fi, Documentary, Drama', 'Sci-Fi, Drama', 'Sci-Fi, Drama, Animation', 'Sci-Fi, Horror', 'Sci-Fi, Horror, Action', 'Sci-Fi, Horror, Thriller', 'Sci-Fi, Romance', 'Sci-Fi, Romance, Action', 'Sci-Fi, Romance, Animation', 'Sci-Fi, Romance, Comedy', 'Sci-Fi, Romance, Documentary', 'Sci-Fi, Romance, Horror', 'Sci-Fi, Romance, Thriller', 'Sci-Fi, Thriller', 'Sci-Fi, Thriller, Action', 'Sci-Fi, Thriller, Animation', 'Sci-Fi, Thriller, Drama', 'Sci-Fi, Thriller, Horror', 'Thriller', 'Thriller, Action', 'Thriller, Action, Adventure', 'Thriller, Action, Animation', 'Thriller, Action, Romance', 'Thriller, Adventure', 'Thriller, Adventure, Action', 'Thriller, Adventure, Comedy', 'Thriller, Adventure, Documentary', 'Thriller, Adventure, Drama', 'Thriller, Animation', 'Thriller, Animation, Romance', 'Thriller, Comedy', 'Thriller, Comedy, Adventure', 'Thriller, Comedy, Romance', 'Thriller, Documentary', 'Thriller, Documentary, Adventure', 'Thriller, Documentary, Drama', 'Thriller, Documentary, Horror', 'Thriller, Documentary, Romance', 'Thriller, Drama', 'Thriller, Drama, Adventure', 'Thriller, Drama, Horror', 'Thriller, Horror', 'Thriller, Horror, Adventure', 'Thriller, Horror, Animation', 'Thriller, Horror, Documentary', 'Thriller, Romance', 'Thriller, Romance, Action', 'Thriller, Romance, Adventure', 'Thriller, Romance, Horror', 'Thriller, Romance, Sci-Fi', 'Thriller, Sci-Fi', 'Thriller, Sci-Fi, Animation']
+2025-08-20 15:20:10,701 - INFO - Cleaning ratings data...
+2025-08-20 15:20:10,702 - INFO - No missing values in ratings
+2025-08-20 15:20:10,707 - WARNING - Found 405 duplicate user-movie pairs. Aggregating by mean rating.
+2025-08-20 15:20:10,713 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-20 15:20:10,714 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 15:20:10,716 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 15:20:10,716 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 15:20:10,754 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 15:20:10,755 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 15:20:10,772 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 15:20:10,773 - INFO - All datasets preprocessed and saved
+2025-08-20 15:20:10,773 - INFO - Performing exploratory data analysis...
+2025-08-20 15:20:10,774 - INFO - Generating rating distribution plot
+2025-08-20 15:20:11,024 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-20 15:20:11,025 - INFO - Generating genre popularity plot
+2025-08-20 15:20:12,164 - INFO - Genre popularity plot saved to C:/crossinsights_project/crossinsights/analysis/genre_popularity.png
+2025-08-20 15:20:12,164 - INFO - Generating age vs ratings plot
+2025-08-20 15:20:12,285 - INFO - Age vs ratings plot saved to C:/crossinsights_project/crossinsights/analysis/age_vs_ratings.png
+2025-08-20 15:20:12,286 - INFO - Training model...
+2025-08-20 15:20:12,286 - INFO - Training SVD model...
+2025-08-20 15:20:12,286 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 15:20:12,287 - INFO - Configuration loaded successfully
+2025-08-20 15:20:12,704 - INFO - SVD model trained and saved to C:/crossinsights_project/crossinsights/models/svd_model.pkl
+2025-08-20 15:20:12,704 - INFO - Generating recommendations...
+2025-08-20 15:20:12,705 - INFO - Generating recommendations for user 1
+2025-08-20 15:20:12,713 - INFO - Top 10 recommendations generated for user 1
+2025-08-20 15:20:12,723 - INFO - Top 10 recommendations for user 1:
+     movie_id     score
+812       813  2.269520
+902       903  2.201815
+855       856  1.902734
+891       892  1.803733
+169       170  1.773365
+492       493  1.757545
+530       531  1.715292
+550       551  1.667172
+719       720  1.455572
+994       995  1.254168
+2025-08-20 15:20:12,724 - INFO - Pipeline Summary:
+2025-08-20 15:20:12,724 - INFO - Data Loaded: Success
+2025-08-20 15:20:12,724 - INFO - Data Preprocessed: Success
+2025-08-20 15:20:12,725 - INFO - Eda Completed: Success
+2025-08-20 15:20:12,725 - INFO - Model Trained: Success
+2025-08-20 15:20:12,725 - INFO - Recommendations Generated: Success
+2025-08-20 15:20:12,726 - INFO - Pipeline completed successfully!
+2025-08-20 18:00:56,786 - INFO - Starting CrossInsights pipeline...
+2025-08-20 18:00:56,787 - INFO - Loading configuration...
+2025-08-20 18:00:56,787 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 18:00:56,789 - INFO - Configuration loaded successfully
+2025-08-20 18:00:56,789 - INFO - Loading raw data...
+2025-08-20 18:00:56,789 - INFO - Loading raw data...
+2025-08-20 18:00:56,790 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 18:00:56,791 - INFO - Configuration loaded successfully
+2025-08-20 18:00:56,792 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 18:00:56,795 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 18:00:56,796 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 18:00:56,798 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 18:00:56,799 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 18:00:56,807 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 18:00:56,807 - INFO - Raw data loaded successfully
+2025-08-20 18:00:56,807 - INFO - Preprocessing data...
+2025-08-20 18:00:56,807 - INFO - Preprocessing all datasets...
+2025-08-20 18:00:56,808 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 18:00:56,809 - INFO - Configuration loaded successfully
+2025-08-20 18:00:56,810 - INFO - Loading raw data...
+2025-08-20 18:00:56,810 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 18:00:56,811 - INFO - Configuration loaded successfully
+2025-08-20 18:00:56,812 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 18:00:56,813 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-20 18:00:56,813 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 18:00:56,815 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-20 18:00:56,815 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 18:00:56,823 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-20 18:00:56,823 - INFO - Raw data loaded successfully
+2025-08-20 18:00:56,824 - INFO - Cleaning users data...
+2025-08-20 18:00:56,824 - INFO - No missing values in users
+2025-08-20 18:00:56,827 - INFO - Users cleaned: age median filled, other missing values replaced with 'Unknown'
+2025-08-20 18:00:56,828 - INFO - Cleaning movies data...
+2025-08-20 18:00:56,829 - INFO - No missing values in movies
+2025-08-20 18:00:56,838 - INFO - Movies cleaned: 358 genres encoded
+2025-08-20 18:00:56,838 - INFO - Genre columns: ['Action', 'Action, Adventure', 'Action, Adventure, Animation', 'Action, Adventure, Horror', 'Action, Adventure, Romance', 'Action, Adventure, Sci-Fi', 'Action, Adventure, Thriller', 'Action, Animation', 'Action, Animation, Documentary', 'Action, Animation, Horror', 'Action, Animation, Romance', 'Action, Animation, Sci-Fi', 'Action, Comedy', 'Action, Comedy, Documentary', 'Action, Comedy, Horror', 'Action, Comedy, Thriller', 'Action, Documentary', 'Action, Documentary, Animation', 'Action, Documentary, Drama', 'Action, Documentary, Horror', 'Action, Documentary, Thriller', 'Action, Drama', 'Action, Drama, Adventure', 'Action, Drama, Thriller', 'Action, Horror', 'Action, Horror, Documentary', 'Action, Horror, Romance', 'Action, Horror, Sci-Fi', 'Action, Romance', 'Action, Romance, Drama', 'Action, Romance, Thriller', 'Action, Sci-Fi', 'Action, Sci-Fi, Animation', 'Action, Sci-Fi, Comedy', 'Action, Sci-Fi, Thriller', 'Action, Thriller', 'Action, Thriller, Documentary', 'Action, Thriller, Horror', 'Action, Thriller, Romance', 'Adventure', 'Adventure, Action', 'Adventure, Action, Comedy', 'Adventure, Action, Documentary', 'Adventure, Animation', 'Adventure, Animation, Comedy', 'Adventure, Animation, Documentary', 'Adventure, Animation, Thriller', 'Adventure, Comedy', 'Adventure, Comedy, Drama', 'Adventure, Comedy, Horror', 'Adventure, Comedy, Romance', 'Adventure, Documentary', 'Adventure, Documentary, Horror', 'Adventure, Documentary, Romance', 'Adventure, Drama, Documentary', 'Adventure, Drama, Horror', 'Adventure, Drama, Sci-Fi', 'Adventure, Horror', 'Adventure, Horror, Action', 'Adventure, Horror, Thriller', 'Adventure, Romance', 'Adventure, Romance, Action', 'Adventure, Romance, Drama', 'Adventure, Romance, Sci-Fi', 'Adventure, Romance, Thriller', 'Adventure, Sci-Fi, Action', 'Adventure, Sci-Fi, Comedy', 'Adventure, Sci-Fi, Thriller', 'Adventure, Thriller', 'Adventure, Thriller, Comedy', 'Adventure, Thriller, Romance', 'Animation', 'Animation, Action', 'Animation, Action, Adventure', 'Animation, Action, Documentary', 'Animation, Action, Drama', 'Animation, Adventure', 'Animation, Adventure, Romance', 'Animation, Comedy', 'Animation, Comedy, Documentary', 'Animation, Comedy, Horror', 'Animation, Documentary', 'Animation, Documentary, Action', 'Animation, Documentary, Drama', 'Animation, Documentary, Horror', 'Animation, Documentary, Romance', 'Animation, Drama', 'Animation, Drama, Adventure', 'Animation, Drama, Romance', 'Animation, Horror', 'Animation, Horror, Action', 'Animation, Horror, Adventure', 'Animation, Horror, Drama', 'Animation, Horror, Romance', 'Animation, Horror, Sci-Fi', 'Animation, Romance', 'Animation, Romance, Comedy', 'Animation, Romance, Documentary', 'Animation, Romance, Thriller', 'Animation, Sci-Fi', 'Animation, Sci-Fi, Comedy', 'Animation, Sci-Fi, Documentary', 'Animation, Sci-Fi, Romance', 'Animation, Sci-Fi, Thriller', 'Animation, Thriller', 'Animation, Thriller, Documentary', 'Animation, Thriller, Drama', 'Animation, Thriller, Horror', 'Comedy', 'Comedy, Action', 'Comedy, Action, Animation', 'Comedy, Adventure', 'Comedy, Adventure, Animation', 'Comedy, Animation', 'Comedy, Animation, Action', 'Comedy, Animation, Romance', 'Comedy, Documentary', 'Comedy, Documentary, Animation', 'Comedy, Documentary, Horror', 'Comedy, Documentary, Sci-Fi', 'Comedy, Drama', 'Comedy, Drama, Action', 'Comedy, Drama, Documentary', 'Comedy, Drama, Horror', 'Comedy, Horror', 'Comedy, Horror, Action', 'Comedy, Horror, Drama', 'Comedy, Horror, Sci-Fi', 'Comedy, Horror, Thriller', 'Comedy, Romance', 'Comedy, Romance, Animation', 'Comedy, Romance, Documentary', 'Comedy, Romance, Sci-Fi', 'Comedy, Sci-Fi', 'Comedy, Sci-Fi, Adventure', 'Comedy, Sci-Fi, Animation', 'Comedy, Sci-Fi, Documentary', 'Comedy, Sci-Fi, Romance', 'Comedy, Thriller', 'Comedy, Thriller, Adventure', 'Comedy, Thriller, Drama', 'Comedy, Thriller, Horror', 'Comedy, Thriller, Sci-Fi', 'Documentary', 'Documentary, Action', 'Documentary, Action, Adventure', 'Documentary, Action, Romance', 'Documentary, Adventure', 'Documentary, Adventure, Action', 'Documentary, Adventure, Comedy', 'Documentary, Adventure, Romance', 'Documentary, Animation', 'Documentary, Animation, Drama', 'Documentary, Animation, Horror', 'Documentary, Animation, Romance', 'Documentary, Animation, Sci-Fi', 'Documentary, Comedy', 'Documentary, Comedy, Action', 'Documentary, Comedy, Thriller', 'Documentary, Drama', 'Documentary, Drama, Action', 'Documentary, Drama, Adventure', 'Documentary, Drama, Thriller', 'Documentary, Horror', 'Documentary, Horror, Romance', 'Documentary, Romance', 'Documentary, Romance, Action', 'Documentary, Romance, Adventure', 'Documentary, Sci-Fi', 'Documentary, Sci-Fi, Adventure', 'Documentary, Sci-Fi, Comedy', 'Documentary, Sci-Fi, Horror', 'Documentary, Sci-Fi, Thriller', 'Documentary, Thriller', 'Documentary, Thriller, Adventure', 'Documentary, Thriller, Animation', 'Drama', 'Drama, Action', 'Drama, Action, Animation', 'Drama, Action, Documentary', 'Drama, Action, Horror', 'Drama, Action, Romance', 'Drama, Adventure', 'Drama, Adventure, Action', 'Drama, Adventure, Comedy', 'Drama, Adventure, Documentary', 'Drama, Adventure, Romance', 'Drama, Animation', 'Drama, Animation, Sci-Fi', 'Drama, Comedy', 'Drama, Comedy, Adventure', 'Drama, Comedy, Thriller', 'Drama, Documentary', 'Drama, Documentary, Romance', 'Drama, Documentary, Thriller', 'Drama, Horror, Action', 'Drama, Horror, Adventure', 'Drama, Horror, Comedy', 'Drama, Horror, Sci-Fi', 'Drama, Romance', 'Drama, Romance, Action', 'Drama, Romance, Adventure', 'Drama, Romance, Thriller', 'Drama, Sci-Fi', 'Drama, Sci-Fi, Comedy', 'Drama, Sci-Fi, Documentary', 'Drama, Thriller', 'Drama, Thriller, Action', 'Drama, Thriller, Documentary', 'Horror', 'Horror, Action', 'Horror, Action, Adventure', 'Horror, Action, Romance', 'Horror, Action, Sci-Fi', 'Horror, Adventure', 'Horror, Adventure, Action', 'Horror, Adventure, Comedy', 'Horror, Adventure, Documentary', 'Horror, Adventure, Romance', 'Horror, Adventure, Thriller', 'Horror, Animation', 'Horror, Animation, Action', 'Horror, Animation, Sci-Fi', 'Horror, Comedy', 'Horror, Comedy, Adventure', 'Horror, Comedy, Thriller', 'Horror, Documentary', 'Horror, Documentary, Action', 'Horror, Documentary, Adventure', 'Horror, Documentary, Comedy', 'Horror, Documentary, Drama', 'Horror, Documentary, Romance', 'Horror, Drama', 'Horror, Drama, Adventure', 'Horror, Drama, Comedy', 'Horror, Drama, Documentary', 'Horror, Romance', 'Horror, Romance, Action', 'Horror, Romance, Documentary', 'Horror, Romance, Thriller', 'Horror, Sci-Fi', 'Horror, Sci-Fi, Adventure', 'Horror, Sci-Fi, Animation', 'Horror, Sci-Fi, Romance', 'Horror, Thriller', 'Horror, Thriller, Sci-Fi', 'Romance', 'Romance, Action', 'Romance, Action, Comedy', 'Romance, Action, Drama', 'Romance, Action, Sci-Fi', 'Romance, Adventure', 'Romance, Adventure, Comedy', 'Romance, Adventure, Thriller', 'Romance, Animation', 'Romance, Animation, Adventure', 'Romance, Animation, Comedy', 'Romance, Animation, Documentary', 'Romance, Animation, Drama', 'Romance, Animation, Thriller', 'Romance, Comedy', 'Romance, Comedy, Animation', 'Romance, Comedy, Documentary', 'Romance, Comedy, Sci-Fi', 'Romance, Comedy, Thriller', 'Romance, Documentary', 'Romance, Documentary, Action', 'Romance, Documentary, Animation', 'Romance, Documentary, Horror', 'Romance, Documentary, Thriller', 'Romance, Drama', 'Romance, Drama, Action', 'Romance, Horror', 'Romance, Horror, Action', 'Romance, Horror, Documentary', 'Romance, Horror, Drama', 'Romance, Sci-Fi, Adventure', 'Romance, Sci-Fi, Comedy', 'Romance, Sci-Fi, Documentary', 'Romance, Sci-Fi, Drama', 'Romance, Thriller', 'Romance, Thriller, Action', 'Romance, Thriller, Adventure', 'Romance, Thriller, Drama', 'Romance, Thriller, Horror', 'Romance, Thriller, Sci-Fi', 'Sci-Fi', 'Sci-Fi, Action', 'Sci-Fi, Action, Thriller', 'Sci-Fi, Adventure', 'Sci-Fi, Adventure, Action', 'Sci-Fi, Adventure, Comedy', 'Sci-Fi, Adventure, Drama', 'Sci-Fi, Adventure, Horror', 'Sci-Fi, Animation', 'Sci-Fi, Animation, Action', 'Sci-Fi, Animation, Adventure', 'Sci-Fi, Animation, Comedy', 'Sci-Fi, Animation, Horror', 'Sci-Fi, Comedy', 'Sci-Fi, Comedy, Adventure', 'Sci-Fi, Comedy, Animation', 'Sci-Fi, Comedy, Documentary', 'Sci-Fi, Comedy, Thriller', 'Sci-Fi, Documentary', 'Sci-Fi, Documentary, Action', 'Sci-Fi, Documentary, Drama', 'Sci-Fi, Drama', 'Sci-Fi, Drama, Animation', 'Sci-Fi, Horror', 'Sci-Fi, Horror, Action', 'Sci-Fi, Horror, Thriller', 'Sci-Fi, Romance', 'Sci-Fi, Romance, Action', 'Sci-Fi, Romance, Animation', 'Sci-Fi, Romance, Comedy', 'Sci-Fi, Romance, Documentary', 'Sci-Fi, Romance, Horror', 'Sci-Fi, Romance, Thriller', 'Sci-Fi, Thriller', 'Sci-Fi, Thriller, Action', 'Sci-Fi, Thriller, Animation', 'Sci-Fi, Thriller, Drama', 'Sci-Fi, Thriller, Horror', 'Thriller', 'Thriller, Action', 'Thriller, Action, Adventure', 'Thriller, Action, Animation', 'Thriller, Action, Romance', 'Thriller, Adventure', 'Thriller, Adventure, Action', 'Thriller, Adventure, Comedy', 'Thriller, Adventure, Documentary', 'Thriller, Adventure, Drama', 'Thriller, Animation', 'Thriller, Animation, Romance', 'Thriller, Comedy', 'Thriller, Comedy, Adventure', 'Thriller, Comedy, Romance', 'Thriller, Documentary', 'Thriller, Documentary, Adventure', 'Thriller, Documentary, Drama', 'Thriller, Documentary, Horror', 'Thriller, Documentary, Romance', 'Thriller, Drama', 'Thriller, Drama, Adventure', 'Thriller, Drama, Horror', 'Thriller, Horror', 'Thriller, Horror, Adventure', 'Thriller, Horror, Animation', 'Thriller, Horror, Documentary', 'Thriller, Romance', 'Thriller, Romance, Action', 'Thriller, Romance, Adventure', 'Thriller, Romance, Horror', 'Thriller, Romance, Sci-Fi', 'Thriller, Sci-Fi', 'Thriller, Sci-Fi, Animation']
+2025-08-20 18:00:56,840 - INFO - Cleaning ratings data...
+2025-08-20 18:00:56,841 - INFO - No missing values in ratings
+2025-08-20 18:00:56,847 - WARNING - Found 405 duplicate user-movie pairs. Aggregating by mean rating.
+2025-08-20 18:00:56,855 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-20 18:00:56,856 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 18:00:56,864 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-20 18:00:56,864 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 18:00:56,907 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-20 18:00:56,907 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 18:00:56,924 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-20 18:00:56,924 - INFO - All datasets preprocessed and saved
+2025-08-20 18:00:56,925 - INFO - Performing exploratory data analysis...
+2025-08-20 18:00:56,925 - INFO - Generating rating distribution plot
+2025-08-20 18:00:57,916 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-20 18:00:57,918 - INFO - Generating genre popularity plot
+2025-08-20 18:00:59,066 - INFO - Genre popularity plot saved to C:/crossinsights_project/crossinsights/analysis/genre_popularity.png
+2025-08-20 18:00:59,067 - INFO - Generating age vs ratings plot
+2025-08-20 18:00:59,190 - INFO - Age vs ratings plot saved to C:/crossinsights_project/crossinsights/analysis/age_vs_ratings.png
+2025-08-20 18:00:59,190 - INFO - Running KNN recommendations...
+2025-08-20 18:00:59,191 - INFO - Running user-user KNN recommendations...
+2025-08-20 18:00:59,191 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 18:00:59,193 - INFO - Configuration loaded successfully
+2025-08-20 18:00:59,193 - INFO - Building user-item matrix...
+2025-08-20 18:00:59,199 - INFO - User-item matrix created with shape: (500, 1000)
+2025-08-20 18:00:59,200 - INFO - Computing cosine similarity for users...
+2025-08-20 18:00:59,208 - INFO - User-user similarity computed
+2025-08-20 18:00:59,209 - INFO - Computing cosine similarity for items...
+2025-08-20 18:00:59,218 - INFO - Item-item similarity computed
+2025-08-20 18:00:59,218 - INFO - Saving KNN model to C:/crossinsights_project/crossinsights/models/knn_model.pkl
+2025-08-20 18:00:59,228 - INFO - KNN model saved to C:/crossinsights_project/crossinsights/models/knn_model.pkl
+2025-08-20 18:00:59,228 - INFO - Generating user-user recommendations for user 1
+2025-08-20 18:00:59,229 - INFO - Top 5 neighbors for user 1: [152, 328, 22, 404, 439]
+2025-08-20 18:00:59,476 - INFO - Generated 10 recommendations for user 1
+2025-08-20 18:00:59,477 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv
+2025-08-20 18:00:59,478 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv
+2025-08-20 18:00:59,478 - INFO - Generating similarity distribution plot
+2025-08-20 18:01:00,315 - INFO - Similarity distribution plot saved to C:/crossinsights_project/crossinsights/analysis/knn_analysis.png
+2025-08-20 18:01:00,315 - INFO - user-user KNN recommendations completed for user 1
+2025-08-20 18:01:00,327 - INFO - KNN recommendations for user 1:
+     movie_id  predicted_rating
+1          18               5.0
+9          89               5.0
+6          67               5.0
+18        137               5.0
+16        135               5.0
+17        136               5.0
+54        352               5.0
+113       773               5.0
+144       957               5.0
+142       953               5.0
+2025-08-20 18:01:00,328 - INFO - Training model...
+2025-08-20 18:01:00,328 - INFO - Training SVD model...
+2025-08-20 18:01:00,328 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-20 18:01:00,331 - INFO - Configuration loaded successfully
+2025-08-20 18:01:00,727 - INFO - SVD model trained and saved to C:/crossinsights_project/crossinsights/models/svd_model.pkl
+2025-08-20 18:01:00,727 - INFO - Generating SVD recommendations...
+2025-08-20 18:01:00,728 - INFO - Generating recommendations for user 1
+2025-08-20 18:01:00,736 - INFO - Top 10 recommendations generated for user 1
+2025-08-20 18:01:00,741 - INFO - Top 10 SVD recommendations for user 1:
+     movie_id     score
+812       813  2.269520
+902       903  2.201815
+855       856  1.902734
+891       892  1.803733
+169       170  1.773365
+492       493  1.757545
+530       531  1.715292
+550       551  1.667172
+719       720  1.455572
+994       995  1.254168
+2025-08-20 18:01:00,741 - INFO - Pipeline Summary:
+2025-08-20 18:01:00,742 - INFO - Data Loaded: Success
+2025-08-20 18:01:00,742 - INFO - Data Preprocessed: Success
+2025-08-20 18:01:00,742 - INFO - Eda Completed: Success
+2025-08-20 18:01:00,742 - INFO - Knn Recommendations: Success
+2025-08-20 18:01:00,743 - INFO - Model Trained: Success
+2025-08-20 18:01:00,743 - INFO - Recommendations Generated: Success
+2025-08-20 18:01:00,743 - INFO - Pipeline completed successfully!

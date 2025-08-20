@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Project",
+            "type": "shell",
+            "command": "python main.py",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Tests (pytest)",
+            "type": "shell",
+            "command": "pytest -v",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Lint Code (flake8)",
+            "type": "shell",
+            "command": "flake8 . --max-line-length=120",
+            "problemMatcher": []
+        },
+        {
+            "label": "Generate Report",
+            "type": "shell",
+            "command": "python scripts/generate_report.py",
+            "problemMatcher": []
+        }
+    ]
+}
