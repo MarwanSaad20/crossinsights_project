@@ -1,1001 +1,394 @@
 movie_id,title,genres
-1,Movie 1,Sci-Fi
-2,Movie 2,Documentary
-3,Movie 3,"Adventure, Action, Comedy"
-4,Movie 4,Drama
-5,Movie 5,"Romance, Documentary"
-6,Movie 6,"Horror, Adventure"
-7,Movie 7,Drama
-8,Movie 8,"Horror, Adventure, Documentary"
-9,Movie 9,"Romance, Comedy"
-10,Movie 10,"Sci-Fi, Documentary"
-11,Movie 11,"Animation, Romance, Documentary"
-12,Movie 12,"Romance, Animation"
-13,Movie 13,"Comedy, Romance, Sci-Fi"
-14,Movie 14,"Comedy, Horror, Thriller"
-15,Movie 15,"Sci-Fi, Adventure"
-16,Movie 16,Animation
-17,Movie 17,Horror
-18,Movie 18,"Action, Sci-Fi, Thriller"
-19,Movie 19,"Thriller, Comedy"
-20,Movie 20,Sci-Fi
-21,Movie 21,Documentary
-22,Movie 22,Drama
-23,Movie 23,"Animation, Comedy"
-24,Movie 24,"Horror, Comedy"
-25,Movie 25,Thriller
-26,Movie 26,"Adventure, Documentary"
-27,Movie 27,"Comedy, Animation"
-28,Movie 28,"Thriller, Drama"
-29,Movie 29,"Comedy, Horror, Drama"
-30,Movie 30,Sci-Fi
-31,Movie 31,Drama
-32,Movie 32,"Thriller, Romance, Adventure"
-33,Movie 33,Horror
-34,Movie 34,Comedy
-35,Movie 35,Comedy
-36,Movie 36,"Animation, Documentary, Romance"
-37,Movie 37,"Thriller, Drama, Adventure"
-38,Movie 38,"Documentary, Thriller, Adventure"
-39,Movie 39,"Action, Horror"
-40,Movie 40,"Sci-Fi, Drama"
-41,Movie 41,Documentary
-42,Movie 42,Sci-Fi
-43,Movie 43,"Thriller, Action"
-44,Movie 44,"Documentary, Comedy"
-45,Movie 45,"Documentary, Thriller"
-46,Movie 46,"Documentary, Drama, Thriller"
-47,Movie 47,"Romance, Documentary"
-48,Movie 48,"Drama, Adventure, Comedy"
-49,Movie 49,"Drama, Thriller"
-50,Movie 50,Sci-Fi
-51,Movie 51,"Comedy, Adventure"
-52,Movie 52,"Romance, Documentary"
-53,Movie 53,"Horror, Romance"
-54,Movie 54,"Thriller, Drama, Horror"
-55,Movie 55,"Thriller, Documentary, Drama"
-56,Movie 56,"Thriller, Action"
-57,Movie 57,"Comedy, Sci-Fi"
-58,Movie 58,"Adventure, Horror"
-59,Movie 59,Sci-Fi
-60,Movie 60,"Sci-Fi, Drama, Animation"
-61,Movie 61,"Animation, Thriller"
-62,Movie 62,"Action, Adventure, Thriller"
-63,Movie 63,Drama
-64,Movie 64,Sci-Fi
-65,Movie 65,"Comedy, Horror, Action"
-66,Movie 66,"Documentary, Sci-Fi, Thriller"
-67,Movie 67,"Romance, Horror"
-68,Movie 68,Comedy
-69,Movie 69,"Action, Documentary, Thriller"
-70,Movie 70,Sci-Fi
-71,Movie 71,"Romance, Documentary, Action"
-72,Movie 72,"Documentary, Thriller, Animation"
-73,Movie 73,Romance
-74,Movie 74,Drama
-75,Movie 75,Sci-Fi
-76,Movie 76,"Drama, Romance"
-77,Movie 77,"Drama, Thriller, Documentary"
-78,Movie 78,"Sci-Fi, Documentary, Action"
-79,Movie 79,"Animation, Drama, Romance"
-80,Movie 80,"Action, Horror"
-81,Movie 81,Romance
-82,Movie 82,"Documentary, Sci-Fi, Comedy"
-83,Movie 83,"Horror, Comedy, Thriller"
-84,Movie 84,"Action, Sci-Fi"
-85,Movie 85,"Romance, Documentary"
-86,Movie 86,"Adventure, Romance"
-87,Movie 87,"Sci-Fi, Thriller, Animation"
-88,Movie 88,"Romance, Comedy, Sci-Fi"
-89,Movie 89,"Thriller, Comedy, Romance"
-90,Movie 90,"Documentary, Horror"
-91,Movie 91,Animation
-92,Movie 92,"Thriller, Drama"
-93,Movie 93,"Horror, Sci-Fi"
-94,Movie 94,"Romance, Comedy"
-95,Movie 95,"Romance, Comedy"
-96,Movie 96,Horror
-97,Movie 97,"Romance, Drama, Action"
-98,Movie 98,Documentary
-99,Movie 99,Thriller
-100,Movie 100,"Documentary, Drama, Thriller"
-101,Movie 101,"Adventure, Romance, Drama"
-102,Movie 102,"Romance, Comedy, Documentary"
-103,Movie 103,"Thriller, Horror"
-104,Movie 104,"Animation, Horror, Action"
-105,Movie 105,Horror
-106,Movie 106,"Documentary, Adventure, Comedy"
-107,Movie 107,"Animation, Horror, Drama"
-108,Movie 108,"Romance, Animation, Adventure"
-109,Movie 109,"Sci-Fi, Documentary, Action"
-110,Movie 110,"Sci-Fi, Thriller, Action"
-111,Movie 111,"Romance, Comedy"
-112,Movie 112,"Sci-Fi, Horror"
-113,Movie 113,"Animation, Action"
-114,Movie 114,Adventure
-115,Movie 115,"Thriller, Adventure"
-116,Movie 116,"Sci-Fi, Adventure, Horror"
-117,Movie 117,"Drama, Action, Animation"
-118,Movie 118,Horror
-119,Movie 119,Horror
-120,Movie 120,Thriller
-121,Movie 121,"Romance, Animation, Documentary"
-122,Movie 122,"Drama, Action, Documentary"
-123,Movie 123,"Comedy, Drama"
-124,Movie 124,"Sci-Fi, Adventure, Drama"
-125,Movie 125,"Thriller, Romance, Adventure"
-126,Movie 126,"Adventure, Animation, Comedy"
-127,Movie 127,"Drama, Horror, Sci-Fi"
-128,Movie 128,Romance
-129,Movie 129,"Romance, Horror, Drama"
-130,Movie 130,"Sci-Fi, Action, Thriller"
-131,Movie 131,"Horror, Action"
-132,Movie 132,Romance
-133,Movie 133,Thriller
-134,Movie 134,"Comedy, Drama"
-135,Movie 135,"Adventure, Action"
-136,Movie 136,"Thriller, Comedy, Adventure"
-137,Movie 137,"Adventure, Action"
-138,Movie 138,"Comedy, Animation, Action"
-139,Movie 139,"Horror, Comedy, Thriller"
-140,Movie 140,"Romance, Sci-Fi, Documentary"
-141,Movie 141,"Adventure, Animation"
-142,Movie 142,"Action, Adventure, Horror"
-143,Movie 143,"Action, Horror, Romance"
-144,Movie 144,Adventure
-145,Movie 145,"Animation, Documentary, Horror"
-146,Movie 146,"Action, Documentary"
-147,Movie 147,Romance
-148,Movie 148,Thriller
-149,Movie 149,"Sci-Fi, Drama"
-150,Movie 150,"Romance, Action"
-151,Movie 151,Adventure
-152,Movie 152,Thriller
-153,Movie 153,"Adventure, Action"
-154,Movie 154,Animation
-155,Movie 155,Comedy
-156,Movie 156,"Adventure, Comedy"
-157,Movie 157,Adventure
-158,Movie 158,"Comedy, Sci-Fi"
-159,Movie 159,"Sci-Fi, Comedy"
-160,Movie 160,Horror
-161,Movie 161,Comedy
-162,Movie 162,"Animation, Horror"
-163,Movie 163,Comedy
-164,Movie 164,Sci-Fi
-165,Movie 165,"Action, Adventure"
-166,Movie 166,"Animation, Action"
-167,Movie 167,Adventure
-168,Movie 168,Adventure
-169,Movie 169,"Romance, Action, Sci-Fi"
-170,Movie 170,Horror
-171,Movie 171,"Action, Sci-Fi, Animation"
-172,Movie 172,Sci-Fi
-173,Movie 173,Animation
-174,Movie 174,"Comedy, Drama, Documentary"
-175,Movie 175,Drama
-176,Movie 176,"Action, Animation"
-177,Movie 177,"Thriller, Horror, Documentary"
-178,Movie 178,"Thriller, Documentary, Adventure"
-179,Movie 179,Comedy
-180,Movie 180,"Horror, Adventure, Action"
-181,Movie 181,"Horror, Romance, Thriller"
-182,Movie 182,Thriller
-183,Movie 183,Action
-184,Movie 184,"Romance, Adventure, Comedy"
-185,Movie 185,"Comedy, Sci-Fi, Adventure"
-186,Movie 186,Documentary
-187,Movie 187,"Action, Sci-Fi"
-188,Movie 188,"Sci-Fi, Thriller"
-189,Movie 189,Horror
-190,Movie 190,"Horror, Adventure"
-191,Movie 191,"Adventure, Documentary"
-192,Movie 192,Adventure
-193,Movie 193,"Animation, Action"
-194,Movie 194,"Horror, Sci-Fi, Animation"
-195,Movie 195,"Comedy, Sci-Fi"
-196,Movie 196,"Thriller, Documentary"
-197,Movie 197,Adventure
-198,Movie 198,"Comedy, Thriller"
-199,Movie 199,Action
-200,Movie 200,Thriller
-201,Movie 201,"Thriller, Romance, Action"
-202,Movie 202,"Horror, Romance"
-203,Movie 203,"Horror, Action"
-204,Movie 204,"Romance, Drama"
-205,Movie 205,Documentary
-206,Movie 206,Comedy
-207,Movie 207,"Animation, Drama"
-208,Movie 208,"Drama, Sci-Fi"
-209,Movie 209,"Drama, Sci-Fi, Documentary"
-210,Movie 210,"Comedy, Thriller"
-211,Movie 211,"Romance, Thriller, Horror"
-212,Movie 212,Horror
-213,Movie 213,"Drama, Adventure"
-214,Movie 214,"Horror, Thriller, Sci-Fi"
-215,Movie 215,Sci-Fi
-216,Movie 216,"Action, Animation, Romance"
-217,Movie 217,"Animation, Thriller, Horror"
-218,Movie 218,Adventure
-219,Movie 219,Romance
-220,Movie 220,Drama
-221,Movie 221,"Sci-Fi, Thriller"
-222,Movie 222,Adventure
-223,Movie 223,"Adventure, Documentary"
-224,Movie 224,"Drama, Comedy, Adventure"
-225,Movie 225,"Drama, Comedy"
-226,Movie 226,"Sci-Fi, Comedy, Documentary"
-227,Movie 227,"Action, Romance"
-228,Movie 228,Animation
-229,Movie 229,"Adventure, Documentary, Romance"
-230,Movie 230,Animation
-231,Movie 231,"Animation, Thriller"
-232,Movie 232,"Comedy, Documentary"
-233,Movie 233,"Thriller, Sci-Fi"
-234,Movie 234,"Drama, Comedy"
-235,Movie 235,"Animation, Comedy"
-236,Movie 236,Animation
-237,Movie 237,"Comedy, Documentary, Animation"
-238,Movie 238,Documentary
-239,Movie 239,"Drama, Sci-Fi, Comedy"
-240,Movie 240,"Sci-Fi, Documentary"
-241,Movie 241,Romance
-242,Movie 242,"Documentary, Animation, Horror"
-243,Movie 243,"Comedy, Documentary"
-244,Movie 244,"Action, Documentary"
-245,Movie 245,Documentary
-246,Movie 246,Comedy
-247,Movie 247,"Drama, Adventure, Documentary"
-248,Movie 248,"Sci-Fi, Action"
-249,Movie 249,"Drama, Adventure"
-250,Movie 250,"Animation, Drama"
-251,Movie 251,Sci-Fi
-252,Movie 252,Documentary
-253,Movie 253,Romance
-254,Movie 254,"Thriller, Drama"
-255,Movie 255,Documentary
-256,Movie 256,"Action, Thriller"
-257,Movie 257,Drama
-258,Movie 258,"Action, Animation, Horror"
-259,Movie 259,Adventure
-260,Movie 260,"Sci-Fi, Romance, Thriller"
-261,Movie 261,"Horror, Action"
-262,Movie 262,"Animation, Action, Documentary"
-263,Movie 263,"Romance, Animation, Documentary"
-264,Movie 264,"Adventure, Horror"
-265,Movie 265,Drama
-266,Movie 266,Sci-Fi
-267,Movie 267,"Romance, Adventure"
-268,Movie 268,Documentary
-269,Movie 269,"Action, Comedy, Horror"
-270,Movie 270,"Adventure, Drama, Sci-Fi"
-271,Movie 271,Thriller
-272,Movie 272,"Animation, Romance"
-273,Movie 273,"Romance, Animation, Drama"
-274,Movie 274,Romance
-275,Movie 275,"Comedy, Sci-Fi, Animation"
-276,Movie 276,"Sci-Fi, Comedy, Thriller"
-277,Movie 277,"Drama, Sci-Fi, Documentary"
-278,Movie 278,"Thriller, Comedy"
-279,Movie 279,"Drama, Romance"
-280,Movie 280,"Sci-Fi, Documentary"
-281,Movie 281,Horror
-282,Movie 282,"Animation, Documentary, Drama"
-283,Movie 283,"Action, Documentary, Animation"
-284,Movie 284,Action
-285,Movie 285,"Thriller, Romance"
-286,Movie 286,Action
-287,Movie 287,"Comedy, Drama, Action"
-288,Movie 288,"Thriller, Drama"
-289,Movie 289,"Adventure, Animation, Documentary"
-290,Movie 290,"Horror, Romance, Action"
-291,Movie 291,"Thriller, Documentary, Romance"
-292,Movie 292,Drama
-293,Movie 293,Adventure
-294,Movie 294,Animation
-295,Movie 295,"Sci-Fi, Documentary, Drama"
-296,Movie 296,Horror
-297,Movie 297,"Documentary, Action, Romance"
-298,Movie 298,Romance
-299,Movie 299,"Adventure, Horror, Action"
-300,Movie 300,Thriller
-301,Movie 301,"Thriller, Comedy"
-302,Movie 302,Comedy
-303,Movie 303,"Romance, Comedy"
-304,Movie 304,"Animation, Adventure, Romance"
-305,Movie 305,"Thriller, Romance"
-306,Movie 306,"Comedy, Documentary, Animation"
-307,Movie 307,"Action, Adventure"
-308,Movie 308,"Comedy, Sci-Fi, Adventure"
-309,Movie 309,"Sci-Fi, Animation, Action"
-310,Movie 310,Horror
-311,Movie 311,Horror
-312,Movie 312,"Drama, Sci-Fi, Documentary"
-313,Movie 313,Animation
-314,Movie 314,Romance
-315,Movie 315,"Adventure, Action, Documentary"
-316,Movie 316,"Animation, Action"
-317,Movie 317,Horror
-318,Movie 318,"Comedy, Thriller"
-319,Movie 319,"Documentary, Animation, Sci-Fi"
-320,Movie 320,"Thriller, Documentary, Horror"
-321,Movie 321,Horror
-322,Movie 322,"Horror, Animation"
-323,Movie 323,Animation
-324,Movie 324,Action
-325,Movie 325,Romance
-326,Movie 326,Sci-Fi
-327,Movie 327,Documentary
-328,Movie 328,"Horror, Comedy"
-329,Movie 329,"Thriller, Sci-Fi"
-330,Movie 330,"Horror, Adventure"
-331,Movie 331,"Comedy, Documentary"
-332,Movie 332,"Adventure, Comedy"
-333,Movie 333,Comedy
-334,Movie 334,"Adventure, Animation, Thriller"
-335,Movie 335,"Action, Animation, Horror"
-336,Movie 336,"Documentary, Thriller"
-337,Movie 337,Animation
-338,Movie 338,"Comedy, Thriller"
-339,Movie 339,"Horror, Drama, Documentary"
-340,Movie 340,"Horror, Documentary, Drama"
-341,Movie 341,Action
-342,Movie 342,"Drama, Action"
-343,Movie 343,"Adventure, Documentary, Horror"
-344,Movie 344,"Sci-Fi, Thriller"
-345,Movie 345,Comedy
-346,Movie 346,Horror
-347,Movie 347,"Sci-Fi, Horror, Action"
-348,Movie 348,"Sci-Fi, Animation"
-349,Movie 349,"Thriller, Animation"
-350,Movie 350,"Thriller, Action"
-351,Movie 351,"Thriller, Action"
-352,Movie 352,Action
-353,Movie 353,"Romance, Action"
-354,Movie 354,"Thriller, Sci-Fi, Animation"
-355,Movie 355,Documentary
-356,Movie 356,Horror
-357,Movie 357,Comedy
-358,Movie 358,Comedy
-359,Movie 359,"Animation, Drama"
-360,Movie 360,Thriller
-361,Movie 361,"Romance, Animation, Thriller"
-362,Movie 362,"Documentary, Action"
-363,Movie 363,Horror
-364,Movie 364,"Sci-Fi, Thriller, Horror"
-365,Movie 365,"Sci-Fi, Animation, Horror"
-366,Movie 366,Comedy
-367,Movie 367,Animation
-368,Movie 368,Horror
-369,Movie 369,Action
-370,Movie 370,Thriller
-371,Movie 371,"Sci-Fi, Adventure"
-372,Movie 372,Drama
-373,Movie 373,"Documentary, Sci-Fi"
-374,Movie 374,"Action, Sci-Fi"
-375,Movie 375,"Action, Drama, Thriller"
-376,Movie 376,Drama
-377,Movie 377,Comedy
-378,Movie 378,Action
-379,Movie 379,"Documentary, Animation"
-380,Movie 380,"Romance, Documentary"
-381,Movie 381,Documentary
-382,Movie 382,"Comedy, Romance"
-383,Movie 383,"Thriller, Adventure"
-384,Movie 384,"Documentary, Horror"
-385,Movie 385,"Sci-Fi, Action"
-386,Movie 386,"Action, Sci-Fi"
-387,Movie 387,"Animation, Documentary, Horror"
-388,Movie 388,"Adventure, Horror, Thriller"
-389,Movie 389,"Sci-Fi, Comedy"
-390,Movie 390,"Thriller, Adventure, Documentary"
-391,Movie 391,Thriller
-392,Movie 392,Horror
-393,Movie 393,"Comedy, Thriller, Sci-Fi"
-394,Movie 394,"Animation, Drama"
-395,Movie 395,"Romance, Comedy, Animation"
-396,Movie 396,Sci-Fi
-397,Movie 397,"Thriller, Romance, Horror"
-398,Movie 398,Adventure
-399,Movie 399,"Drama, Horror, Comedy"
-400,Movie 400,Animation
-401,Movie 401,Animation
-402,Movie 402,"Drama, Romance, Adventure"
-403,Movie 403,"Horror, Documentary"
-404,Movie 404,Comedy
-405,Movie 405,"Horror, Action"
-406,Movie 406,"Thriller, Horror"
-407,Movie 407,Horror
-408,Movie 408,"Documentary, Romance, Action"
-409,Movie 409,Drama
-410,Movie 410,"Documentary, Sci-Fi, Horror"
-411,Movie 411,"Romance, Sci-Fi, Drama"
-412,Movie 412,"Adventure, Documentary"
-413,Movie 413,"Thriller, Horror, Adventure"
-414,Movie 414,Documentary
-415,Movie 415,Romance
-416,Movie 416,Thriller
-417,Movie 417,Adventure
-418,Movie 418,Animation
-419,Movie 419,"Drama, Horror, Adventure"
-420,Movie 420,Documentary
-421,Movie 421,"Romance, Action"
-422,Movie 422,"Comedy, Romance, Documentary"
-423,Movie 423,"Action, Adventure, Animation"
-424,Movie 424,Action
-425,Movie 425,"Action, Comedy"
-426,Movie 426,"Action, Horror"
-427,Movie 427,"Drama, Horror, Action"
-428,Movie 428,"Documentary, Adventure, Action"
-429,Movie 429,Documentary
-430,Movie 430,"Sci-Fi, Romance, Comedy"
-431,Movie 431,Sci-Fi
-432,Movie 432,"Comedy, Action"
-433,Movie 433,"Thriller, Comedy"
-434,Movie 434,"Thriller, Animation"
-435,Movie 435,"Horror, Action"
-436,Movie 436,"Comedy, Drama, Horror"
-437,Movie 437,"Documentary, Romance"
-438,Movie 438,Comedy
-439,Movie 439,"Romance, Documentary"
-440,Movie 440,"Animation, Adventure"
-441,Movie 441,"Horror, Adventure"
-442,Movie 442,"Sci-Fi, Animation, Adventure"
-443,Movie 443,"Documentary, Animation"
-444,Movie 444,Romance
-445,Movie 445,Horror
-446,Movie 446,"Horror, Action, Sci-Fi"
-447,Movie 447,"Action, Romance, Thriller"
-448,Movie 448,"Horror, Action"
-449,Movie 449,Action
-450,Movie 450,"Comedy, Sci-Fi, Romance"
-451,Movie 451,Drama
-452,Movie 452,"Adventure, Horror, Action"
-453,Movie 453,"Comedy, Horror"
-454,Movie 454,Thriller
-455,Movie 455,Drama
-456,Movie 456,"Animation, Drama"
-457,Movie 457,"Adventure, Action"
-458,Movie 458,"Adventure, Thriller, Comedy"
-459,Movie 459,"Sci-Fi, Documentary"
-460,Movie 460,Sci-Fi
-461,Movie 461,"Horror, Documentary, Comedy"
-462,Movie 462,Drama
-463,Movie 463,Romance
-464,Movie 464,"Documentary, Animation"
-465,Movie 465,"Action, Documentary"
-466,Movie 466,"Comedy, Thriller, Drama"
-467,Movie 467,"Romance, Animation"
-468,Movie 468,"Comedy, Documentary, Sci-Fi"
-469,Movie 469,"Romance, Adventure"
-470,Movie 470,"Documentary, Drama, Adventure"
-471,Movie 471,"Documentary, Sci-Fi"
-472,Movie 472,Documentary
-473,Movie 473,"Action, Sci-Fi"
-474,Movie 474,"Thriller, Action, Adventure"
-475,Movie 475,Documentary
-476,Movie 476,"Sci-Fi, Drama"
-477,Movie 477,"Action, Romance, Drama"
-478,Movie 478,"Documentary, Action"
-479,Movie 479,"Comedy, Action"
-480,Movie 480,"Adventure, Comedy, Drama"
-481,Movie 481,"Documentary, Animation, Drama"
-482,Movie 482,"Sci-Fi, Adventure"
-483,Movie 483,Documentary
-484,Movie 484,"Adventure, Horror, Thriller"
-485,Movie 485,Adventure
-486,Movie 486,Animation
-487,Movie 487,Horror
-488,Movie 488,Sci-Fi
-489,Movie 489,"Animation, Documentary"
-490,Movie 490,"Drama, Thriller"
-491,Movie 491,"Sci-Fi, Thriller"
-492,Movie 492,"Sci-Fi, Adventure"
-493,Movie 493,Drama
-494,Movie 494,Documentary
-495,Movie 495,"Documentary, Animation"
-496,Movie 496,"Drama, Thriller"
-497,Movie 497,"Animation, Romance"
-498,Movie 498,"Animation, Horror"
-499,Movie 499,"Horror, Drama"
-500,Movie 500,Adventure
-501,Movie 501,Action
-502,Movie 502,"Comedy, Sci-Fi, Documentary"
-503,Movie 503,"Horror, Animation, Sci-Fi"
-504,Movie 504,Action
-505,Movie 505,"Animation, Horror"
-506,Movie 506,"Sci-Fi, Adventure, Horror"
-507,Movie 507,"Animation, Comedy"
-508,Movie 508,"Horror, Adventure"
-509,Movie 509,Drama
-510,Movie 510,"Comedy, Adventure"
-511,Movie 511,"Romance, Drama"
-512,Movie 512,"Romance, Sci-Fi, Comedy"
-513,Movie 513,"Horror, Adventure, Romance"
-514,Movie 514,"Documentary, Drama"
-515,Movie 515,"Adventure, Romance"
-516,Movie 516,"Comedy, Thriller"
-517,Movie 517,"Comedy, Documentary"
-518,Movie 518,"Horror, Adventure, Thriller"
-519,Movie 519,"Comedy, Animation"
-520,Movie 520,Comedy
-521,Movie 521,Documentary
-522,Movie 522,Romance
-523,Movie 523,"Sci-Fi, Adventure, Comedy"
-524,Movie 524,"Action, Animation, Sci-Fi"
-525,Movie 525,"Horror, Sci-Fi"
-526,Movie 526,"Action, Drama"
-527,Movie 527,Animation
-528,Movie 528,"Action, Sci-Fi"
-529,Movie 529,"Sci-Fi, Comedy"
-530,Movie 530,"Animation, Action, Documentary"
-531,Movie 531,Horror
-532,Movie 532,"Animation, Drama, Adventure"
-533,Movie 533,"Documentary, Thriller"
-534,Movie 534,"Documentary, Sci-Fi"
-535,Movie 535,"Sci-Fi, Documentary"
-536,Movie 536,Drama
-537,Movie 537,"Romance, Thriller"
-538,Movie 538,"Animation, Romance"
-539,Movie 539,"Drama, Documentary, Thriller"
-540,Movie 540,Action
-541,Movie 541,"Animation, Romance, Comedy"
-542,Movie 542,"Adventure, Sci-Fi, Action"
-543,Movie 543,"Thriller, Horror"
-544,Movie 544,"Documentary, Thriller"
-545,Movie 545,Romance
-546,Movie 546,Action
-547,Movie 547,Animation
-548,Movie 548,"Documentary, Sci-Fi"
-549,Movie 549,Romance
-550,Movie 550,"Animation, Adventure"
-551,Movie 551,Comedy
-552,Movie 552,"Action, Documentary, Horror"
-553,Movie 553,"Romance, Animation"
-554,Movie 554,Action
-555,Movie 555,"Sci-Fi, Romance"
-556,Movie 556,"Romance, Action"
-557,Movie 557,"Animation, Romance"
-558,Movie 558,"Documentary, Romance"
-559,Movie 559,Comedy
-560,Movie 560,Romance
-561,Movie 561,Animation
-562,Movie 562,"Action, Adventure, Thriller"
-563,Movie 563,"Thriller, Documentary"
-564,Movie 564,"Comedy, Action, Animation"
-565,Movie 565,"Romance, Sci-Fi, Drama"
-566,Movie 566,Animation
-567,Movie 567,"Adventure, Romance"
-568,Movie 568,"Romance, Action"
-569,Movie 569,"Romance, Thriller"
-570,Movie 570,"Action, Documentary"
-571,Movie 571,"Thriller, Action"
-572,Movie 572,Comedy
-573,Movie 573,"Drama, Thriller"
-574,Movie 574,Documentary
-575,Movie 575,"Romance, Animation, Adventure"
-576,Movie 576,"Horror, Drama"
-577,Movie 577,"Drama, Documentary, Thriller"
-578,Movie 578,"Documentary, Romance, Adventure"
-579,Movie 579,"Documentary, Horror"
-580,Movie 580,"Animation, Thriller, Documentary"
-581,Movie 581,"Animation, Horror"
-582,Movie 582,"Comedy, Action"
-583,Movie 583,"Animation, Documentary, Action"
-584,Movie 584,Animation
-585,Movie 585,Sci-Fi
-586,Movie 586,"Sci-Fi, Romance, Comedy"
-587,Movie 587,"Drama, Comedy, Thriller"
-588,Movie 588,"Drama, Action, Horror"
-589,Movie 589,Drama
-590,Movie 590,"Sci-Fi, Romance, Horror"
-591,Movie 591,"Drama, Romance"
-592,Movie 592,"Documentary, Sci-Fi, Adventure"
-593,Movie 593,"Romance, Animation, Comedy"
-594,Movie 594,"Drama, Romance"
-595,Movie 595,"Action, Adventure, Sci-Fi"
-596,Movie 596,"Thriller, Animation"
-597,Movie 597,"Documentary, Horror"
-598,Movie 598,Adventure
-599,Movie 599,"Thriller, Animation"
-600,Movie 600,Action
-601,Movie 601,"Romance, Adventure, Thriller"
-602,Movie 602,"Adventure, Animation"
-603,Movie 603,Drama
-604,Movie 604,"Animation, Thriller"
-605,Movie 605,"Comedy, Romance"
-606,Movie 606,"Romance, Drama, Action"
-607,Movie 607,Sci-Fi
-608,Movie 608,"Romance, Sci-Fi, Adventure"
-609,Movie 609,"Sci-Fi, Horror"
-610,Movie 610,"Romance, Documentary, Horror"
-611,Movie 611,"Documentary, Horror, Romance"
-612,Movie 612,Drama
-613,Movie 613,"Comedy, Thriller, Adventure"
-614,Movie 614,Comedy
-615,Movie 615,"Adventure, Action"
-616,Movie 616,"Drama, Thriller"
-617,Movie 617,"Romance, Comedy"
-618,Movie 618,"Animation, Adventure"
-619,Movie 619,Horror
-620,Movie 620,"Animation, Action"
-621,Movie 621,"Sci-Fi, Adventure, Comedy"
-622,Movie 622,"Adventure, Romance, Thriller"
-623,Movie 623,Sci-Fi
-624,Movie 624,"Romance, Adventure, Thriller"
-625,Movie 625,Horror
-626,Movie 626,"Documentary, Sci-Fi"
-627,Movie 627,Adventure
-628,Movie 628,"Thriller, Drama"
-629,Movie 629,Adventure
-630,Movie 630,Adventure
-631,Movie 631,Action
-632,Movie 632,"Action, Documentary, Drama"
-633,Movie 633,Romance
-634,Movie 634,"Adventure, Sci-Fi, Comedy"
-635,Movie 635,"Horror, Action"
-636,Movie 636,"Animation, Drama"
-637,Movie 637,"Romance, Documentary, Animation"
-638,Movie 638,Documentary
-639,Movie 639,"Animation, Action, Drama"
-640,Movie 640,Thriller
-641,Movie 641,"Documentary, Adventure, Comedy"
-642,Movie 642,"Romance, Horror"
-643,Movie 643,"Romance, Drama"
-644,Movie 644,Action
-645,Movie 645,"Drama, Documentary"
-646,Movie 646,"Action, Comedy"
-647,Movie 647,"Documentary, Comedy"
-648,Movie 648,Comedy
-649,Movie 649,"Romance, Thriller, Drama"
-650,Movie 650,"Comedy, Drama"
-651,Movie 651,"Action, Comedy, Thriller"
-652,Movie 652,Sci-Fi
-653,Movie 653,"Sci-Fi, Action"
-654,Movie 654,"Documentary, Thriller"
-655,Movie 655,"Horror, Action, Romance"
-656,Movie 656,"Romance, Horror, Action"
-657,Movie 657,Sci-Fi
-658,Movie 658,Sci-Fi
-659,Movie 659,"Romance, Horror"
-660,Movie 660,Adventure
-661,Movie 661,Romance
-662,Movie 662,"Thriller, Action, Animation"
-663,Movie 663,"Horror, Action"
-664,Movie 664,"Thriller, Documentary"
-665,Movie 665,"Thriller, Horror"
-666,Movie 666,"Sci-Fi, Comedy, Adventure"
-667,Movie 667,"Sci-Fi, Documentary"
-668,Movie 668,Comedy
-669,Movie 669,Drama
-670,Movie 670,Animation
-671,Movie 671,"Animation, Horror, Sci-Fi"
-672,Movie 672,"Documentary, Adventure"
-673,Movie 673,"Action, Comedy, Documentary"
-674,Movie 674,"Thriller, Action"
-675,Movie 675,Adventure
-676,Movie 676,"Comedy, Sci-Fi"
-677,Movie 677,"Drama, Thriller, Documentary"
-678,Movie 678,"Drama, Horror, Sci-Fi"
-679,Movie 679,"Action, Comedy"
-680,Movie 680,"Animation, Thriller"
-681,Movie 681,Comedy
-682,Movie 682,Horror
-683,Movie 683,Thriller
-684,Movie 684,Documentary
-685,Movie 685,Comedy
-686,Movie 686,"Adventure, Animation"
-687,Movie 687,"Animation, Action, Drama"
-688,Movie 688,"Romance, Action, Sci-Fi"
-689,Movie 689,"Horror, Sci-Fi"
-690,Movie 690,"Horror, Romance, Documentary"
-691,Movie 691,"Romance, Horror"
-692,Movie 692,Animation
-693,Movie 693,"Comedy, Horror, Sci-Fi"
-694,Movie 694,Action
-695,Movie 695,Thriller
-696,Movie 696,Action
-697,Movie 697,"Adventure, Romance"
-698,Movie 698,"Comedy, Documentary, Sci-Fi"
-699,Movie 699,"Romance, Action"
-700,Movie 700,Thriller
-701,Movie 701,Drama
-702,Movie 702,"Documentary, Comedy, Action"
-703,Movie 703,Horror
-704,Movie 704,"Romance, Thriller, Sci-Fi"
-705,Movie 705,"Action, Documentary"
-706,Movie 706,Sci-Fi
-707,Movie 707,"Sci-Fi, Thriller, Action"
-708,Movie 708,"Horror, Documentary, Adventure"
-709,Movie 709,"Action, Drama, Adventure"
-710,Movie 710,Action
-711,Movie 711,"Romance, Animation, Drama"
-712,Movie 712,"Sci-Fi, Romance, Documentary"
-713,Movie 713,Documentary
-714,Movie 714,"Horror, Sci-Fi"
-715,Movie 715,Comedy
-716,Movie 716,"Horror, Sci-Fi, Romance"
-717,Movie 717,Adventure
-718,Movie 718,"Animation, Adventure, Romance"
-719,Movie 719,"Drama, Adventure, Romance"
-720,Movie 720,Horror
-721,Movie 721,Documentary
-722,Movie 722,"Thriller, Adventure, Drama"
-723,Movie 723,Comedy
-724,Movie 724,"Romance, Thriller"
-725,Movie 725,"Horror, Romance"
-726,Movie 726,Thriller
-727,Movie 727,"Documentary, Thriller"
-728,Movie 728,"Romance, Action, Comedy"
-729,Movie 729,Drama
-730,Movie 730,"Sci-Fi, Horror, Thriller"
-731,Movie 731,"Drama, Thriller, Action"
-732,Movie 732,"Action, Horror, Sci-Fi"
-733,Movie 733,"Sci-Fi, Thriller, Animation"
-734,Movie 734,"Romance, Adventure"
-735,Movie 735,Horror
-736,Movie 736,"Animation, Romance, Thriller"
-737,Movie 737,Comedy
-738,Movie 738,"Thriller, Documentary"
-739,Movie 739,"Thriller, Romance"
-740,Movie 740,"Thriller, Adventure, Action"
-741,Movie 741,Romance
-742,Movie 742,Comedy
-743,Movie 743,"Animation, Horror, Adventure"
-744,Movie 744,"Thriller, Adventure, Documentary"
-745,Movie 745,"Sci-Fi, Animation, Comedy"
-746,Movie 746,"Documentary, Sci-Fi"
-747,Movie 747,"Romance, Thriller"
-748,Movie 748,"Animation, Thriller, Drama"
-749,Movie 749,"Animation, Sci-Fi, Romance"
-750,Movie 750,"Horror, Adventure"
-751,Movie 751,Drama
-752,Movie 752,Animation
-753,Movie 753,Sci-Fi
-754,Movie 754,"Horror, Documentary"
-755,Movie 755,Animation
-756,Movie 756,"Drama, Action, Romance"
-757,Movie 757,"Animation, Romance, Thriller"
-758,Movie 758,Romance
-759,Movie 759,"Sci-Fi, Thriller"
-760,Movie 760,"Adventure, Animation"
-761,Movie 761,"Horror, Documentary, Action"
-762,Movie 762,Documentary
-763,Movie 763,"Thriller, Documentary"
-764,Movie 764,"Romance, Animation"
-765,Movie 765,Horror
-766,Movie 766,"Action, Horror, Romance"
-767,Movie 767,"Thriller, Drama"
-768,Movie 768,"Documentary, Adventure, Romance"
-769,Movie 769,"Adventure, Documentary"
-770,Movie 770,"Romance, Action, Drama"
-771,Movie 771,"Comedy, Animation, Romance"
-772,Movie 772,Drama
-773,Movie 773,"Horror, Animation"
-774,Movie 774,"Documentary, Drama"
-775,Movie 775,Thriller
-776,Movie 776,"Horror, Romance"
-777,Movie 777,"Animation, Sci-Fi"
-778,Movie 778,"Drama, Animation"
-779,Movie 779,"Romance, Thriller, Action"
-780,Movie 780,"Horror, Drama, Comedy"
-781,Movie 781,Romance
-782,Movie 782,"Sci-Fi, Action"
-783,Movie 783,Drama
-784,Movie 784,Comedy
-785,Movie 785,"Romance, Thriller, Adventure"
-786,Movie 786,"Animation, Horror"
-787,Movie 787,"Romance, Adventure, Thriller"
-788,Movie 788,"Horror, Drama, Adventure"
-789,Movie 789,Documentary
-790,Movie 790,"Horror, Thriller"
-791,Movie 791,"Drama, Action"
-792,Movie 792,Drama
-793,Movie 793,"Comedy, Horror, Drama"
-794,Movie 794,"Horror, Drama"
-795,Movie 795,Sci-Fi
-796,Movie 796,Romance
-797,Movie 797,"Action, Comedy"
-798,Movie 798,Sci-Fi
-799,Movie 799,"Comedy, Animation"
-800,Movie 800,"Action, Documentary, Drama"
-801,Movie 801,"Adventure, Drama, Documentary"
-802,Movie 802,"Sci-Fi, Thriller"
-803,Movie 803,"Horror, Comedy, Adventure"
-804,Movie 804,"Documentary, Sci-Fi"
-805,Movie 805,"Horror, Sci-Fi, Adventure"
-806,Movie 806,"Comedy, Adventure"
-807,Movie 807,"Comedy, Animation"
-808,Movie 808,"Sci-Fi, Romance, Action"
-809,Movie 809,"Documentary, Sci-Fi"
-810,Movie 810,"Documentary, Comedy, Thriller"
-811,Movie 811,"Animation, Comedy"
-812,Movie 812,"Drama, Romance, Action"
-813,Movie 813,"Animation, Romance"
-814,Movie 814,"Animation, Romance"
-815,Movie 815,Animation
-816,Movie 816,Action
-817,Movie 817,Romance
-818,Movie 818,"Thriller, Romance, Sci-Fi"
-819,Movie 819,"Horror, Sci-Fi"
-820,Movie 820,"Thriller, Horror, Animation"
-821,Movie 821,"Documentary, Sci-Fi"
-822,Movie 822,"Romance, Drama"
-823,Movie 823,Animation
-824,Movie 824,Romance
-825,Movie 825,"Comedy, Romance"
-826,Movie 826,"Horror, Drama"
-827,Movie 827,"Animation, Horror, Sci-Fi"
-828,Movie 828,"Sci-Fi, Adventure, Drama"
-829,Movie 829,"Drama, Sci-Fi"
-830,Movie 830,Documentary
-831,Movie 831,"Thriller, Documentary"
-832,Movie 832,Horror
-833,Movie 833,Horror
-834,Movie 834,"Action, Thriller, Horror"
-835,Movie 835,Sci-Fi
-836,Movie 836,Action
-837,Movie 837,"Drama, Documentary, Romance"
-838,Movie 838,"Drama, Action"
-839,Movie 839,Romance
-840,Movie 840,"Drama, Animation, Sci-Fi"
-841,Movie 841,Drama
-842,Movie 842,Animation
-843,Movie 843,"Documentary, Action, Adventure"
-844,Movie 844,"Action, Horror"
-845,Movie 845,"Adventure, Action, Documentary"
-846,Movie 846,"Comedy, Thriller, Horror"
-847,Movie 847,"Comedy, Romance, Documentary"
-848,Movie 848,"Sci-Fi, Documentary"
-849,Movie 849,"Drama, Adventure, Action"
-850,Movie 850,"Drama, Romance, Thriller"
-851,Movie 851,Romance
-852,Movie 852,"Comedy, Adventure, Animation"
-853,Movie 853,"Animation, Thriller"
-854,Movie 854,"Animation, Romance"
-855,Movie 855,Sci-Fi
-856,Movie 856,"Horror, Action, Adventure"
-857,Movie 857,Drama
-858,Movie 858,"Romance, Horror, Documentary"
-859,Movie 859,Thriller
-860,Movie 860,Romance
-861,Movie 861,"Thriller, Adventure, Comedy"
-862,Movie 862,"Romance, Action, Drama"
-863,Movie 863,Action
-864,Movie 864,"Action, Horror"
-865,Movie 865,Action
-866,Movie 866,"Animation, Sci-Fi, Romance"
-867,Movie 867,Documentary
-868,Movie 868,Thriller
-869,Movie 869,"Sci-Fi, Thriller"
-870,Movie 870,"Romance, Horror, Drama"
-871,Movie 871,"Thriller, Horror"
-872,Movie 872,"Comedy, Horror"
-873,Movie 873,Romance
-874,Movie 874,"Horror, Action"
-875,Movie 875,"Comedy, Animation"
-876,Movie 876,Romance
-877,Movie 877,"Sci-Fi, Comedy, Animation"
-878,Movie 878,"Adventure, Animation"
-879,Movie 879,"Horror, Documentary"
-880,Movie 880,"Animation, Horror"
-881,Movie 881,Horror
-882,Movie 882,"Comedy, Documentary, Horror"
-883,Movie 883,"Thriller, Comedy"
-884,Movie 884,"Documentary, Sci-Fi, Horror"
-885,Movie 885,"Sci-Fi, Adventure, Action"
-886,Movie 886,"Comedy, Romance, Animation"
-887,Movie 887,"Adventure, Thriller"
-888,Movie 888,"Romance, Thriller, Horror"
-889,Movie 889,"Action, Horror, Documentary"
-890,Movie 890,"Animation, Sci-Fi, Comedy"
-891,Movie 891,Documentary
-892,Movie 892,"Horror, Comedy"
-893,Movie 893,Drama
-894,Movie 894,"Thriller, Adventure"
-895,Movie 895,"Action, Sci-Fi"
-896,Movie 896,"Action, Animation, Documentary"
-897,Movie 897,Horror
-898,Movie 898,"Documentary, Action"
-899,Movie 899,Horror
-900,Movie 900,"Horror, Thriller"
-901,Movie 901,"Horror, Documentary, Romance"
-902,Movie 902,"Action, Sci-Fi, Comedy"
-903,Movie 903,Animation
-904,Movie 904,"Animation, Action"
-905,Movie 905,"Animation, Horror, Romance"
-906,Movie 906,Romance
-907,Movie 907,Action
-908,Movie 908,"Comedy, Sci-Fi, Adventure"
-909,Movie 909,Adventure
-910,Movie 910,Comedy
-911,Movie 911,"Horror, Animation, Action"
-912,Movie 912,"Horror, Romance"
-913,Movie 913,"Adventure, Thriller, Romance"
-914,Movie 914,"Romance, Documentary, Thriller"
-915,Movie 915,"Action, Horror"
-916,Movie 916,Thriller
-917,Movie 917,"Thriller, Animation, Romance"
-918,Movie 918,"Documentary, Animation"
-919,Movie 919,Action
-920,Movie 920,"Drama, Horror, Comedy"
-921,Movie 921,"Action, Thriller, Documentary"
-922,Movie 922,"Adventure, Comedy, Romance"
-923,Movie 923,"Comedy, Thriller"
-924,Movie 924,Action
-925,Movie 925,"Horror, Adventure, Comedy"
-926,Movie 926,"Documentary, Animation, Romance"
-927,Movie 927,"Animation, Romance"
-928,Movie 928,"Thriller, Romance"
-929,Movie 929,"Sci-Fi, Thriller"
-930,Movie 930,"Animation, Sci-Fi, Documentary"
-931,Movie 931,Drama
-932,Movie 932,"Action, Thriller, Romance"
-933,Movie 933,"Comedy, Sci-Fi, Animation"
-934,Movie 934,"Thriller, Horror"
-935,Movie 935,"Animation, Sci-Fi, Romance"
-936,Movie 936,"Action, Adventure, Romance"
-937,Movie 937,"Romance, Adventure, Thriller"
-938,Movie 938,Animation
-939,Movie 939,Horror
-940,Movie 940,Sci-Fi
-941,Movie 941,"Adventure, Comedy"
-942,Movie 942,Documentary
-943,Movie 943,Comedy
-944,Movie 944,Thriller
-945,Movie 945,Thriller
-946,Movie 946,"Thriller, Adventure"
-947,Movie 947,Drama
-948,Movie 948,Comedy
-949,Movie 949,Action
-950,Movie 950,Sci-Fi
-951,Movie 951,"Romance, Comedy, Thriller"
-952,Movie 952,"Adventure, Comedy, Horror"
-953,Movie 953,Documentary
-954,Movie 954,"Drama, Comedy, Thriller"
-955,Movie 955,"Animation, Horror, Adventure"
-956,Movie 956,"Sci-Fi, Romance, Animation"
-957,Movie 957,Sci-Fi
-958,Movie 958,"Thriller, Action, Romance"
-959,Movie 959,"Romance, Thriller"
-960,Movie 960,"Comedy, Animation"
-961,Movie 961,"Thriller, Documentary"
-962,Movie 962,"Sci-Fi, Comedy"
-963,Movie 963,"Adventure, Drama, Horror"
-964,Movie 964,"Thriller, Adventure"
-965,Movie 965,Drama
-966,Movie 966,Drama
-967,Movie 967,"Comedy, Thriller, Horror"
-968,Movie 968,"Comedy, Documentary, Animation"
-969,Movie 969,Thriller
-970,Movie 970,"Documentary, Horror"
-971,Movie 971,Sci-Fi
-972,Movie 972,"Action, Romance"
-973,Movie 973,"Documentary, Drama, Thriller"
-974,Movie 974,"Sci-Fi, Romance"
-975,Movie 975,"Documentary, Drama, Action"
-976,Movie 976,Adventure
-977,Movie 977,"Comedy, Adventure"
-978,Movie 978,"Romance, Comedy"
-979,Movie 979,Action
-980,Movie 980,"Thriller, Documentary"
-981,Movie 981,"Animation, Action, Adventure"
-982,Movie 982,"Adventure, Animation"
-983,Movie 983,"Adventure, Sci-Fi, Thriller"
-984,Movie 984,"Sci-Fi, Thriller, Drama"
-985,Movie 985,Adventure
-986,Movie 986,"Drama, Animation"
-987,Movie 987,"Animation, Sci-Fi, Thriller"
-988,Movie 988,Action
-989,Movie 989,"Adventure, Romance, Action"
-990,Movie 990,"Animation, Comedy, Horror"
-991,Movie 991,"Comedy, Adventure"
-992,Movie 992,"Comedy, Adventure"
-993,Movie 993,"Action, Comedy"
-994,Movie 994,Horror
-995,Movie 995,Documentary
-996,Movie 996,Sci-Fi
-997,Movie 997,"Animation, Comedy, Documentary"
-998,Movie 998,"Horror, Romance"
-999,Movie 999,"Thriller, Documentary, Horror"
-1000,Movie 1000,"Adventure, Romance, Sci-Fi"
+1,The Shawshank Redemption (1994),Drama
+2,The Godfather (1972),Drama
+3,The Godfather Part II (1974),Drama
+4,The Dark Knight (2008),Drama
+5,12 Angry Men (1957),Drama
+6,Schindler's List (1993),Drama
+7,Pulp Fiction (1994),Drama
+8,The Lord of the Rings: The Return of the King (2003),"Adventure, Horror"
+9,The Lord of the Rings: The Fellowship of the Ring (2001),"Adventure, Horror"
+10,Fight Club (1999),Drama
+11,Forrest Gump (1994),Drama
+12,Inception (2010),Sci-Fi
+13,The Matrix (1999),"Action, Sci-Fi"
+14,Goodfellas (1990),Drama
+15,Se7en (1995),Thriller
+16,The Silence of the Lambs (1991),Drama
+17,City of God (2002),Horror
+18,Saving Private Ryan (1998),Drama
+19,Interstellar (2014),Sci-Fi
+20,Spirited Away (2001),Horror
+21,Parasite (2019),Horror
+22,Whiplash (2014),Drama
+23,Gladiator (2000),Drama
+24,The Green Mile (1999),Drama
+25,The Pianist (2002),Drama
+26,The Departed (2006),Thriller
+27,Terminator 2: Judgment Day (1991),Action
+28,Back to the Future (1985),Drama
+29,Alien (1979),Drama
+30,The Lion King (1994),Drama
+31,The Usual Suspects (1995),Drama
+32,The Prestige (2006),Thriller
+33,The Avengers (2012),Action
+34,Avengers: Infinity War (2018),"Action, Horror"
+35,Avengers: Endgame (2019),Action
+36,Django Unchained (2012),Drama
+37,The Shining (1980),Drama
+38,WALL·E (2008),Animation
+39,Toy Story (1995),Animation
+40,Toy Story 3 (2010),Animation
+41,Coco (2017),Animation
+42,Up (2009),Animation
+43,Inside Out (2015),Animation
+44,Finding Nemo (2003),Animation
+45,Ratatouille (2007),Animation
+46,The Incredibles (2004),Animation
+47,"Monsters, Inc. (2001)",Animation
+48,The Social Network (2010),"Biography, Drama"
+49,Joker (2019),Thriller
+50,The Wolf of Wall Street (2013),Drama
+51,Mad Max: Fury Road (2015),Action
+52,The Truman Show (1998),Drama
+53,American Beauty (1999),Drama
+54,A Beautiful Mind (2001),Drama
+55,The Curious Case of Benjamin Button (2008),Drama
+56,No Country for Old Men (2007),Thriller
+57,There Will Be Blood (2007),Drama
+58,Oldboy (2003),Thriller
+59,Amélie (2001),Drama
+60,Memento (2000),Thriller
+61,The Dark Knight Rises (2012),Drama
+62,Batman Begins (2005),Action
+63,Logan (2017),Drama
+64,Deadpool (2016),Drama
+65,Guardians of the Galaxy (2014),Action
+66,Guardians of the Galaxy Vol. 2 (2017),Action
+67,Black Panther (2018),Drama
+68,Iron Man (2008),Action
+69,Iron Man 2 (2010),Action
+70,Iron Man 3 (2013),Action
+71,Captain America: The First Avenger (2011),Action
+72,Captain America: The Winter Soldier (2014),Action
+73,Captain America: Civil War (2016),Action
+74,Thor (2011),Action
+75,Thor: The Dark World (2013),Action
+76,Thor: Ragnarok (2017),Action
+77,Doctor Strange (2016),Action
+78,Doctor Strange in the Multiverse of Madness (2022),Action
+79,Ant-Man (2015),Action
+80,Ant-Man and the Wasp (2018),Action
+81,Spider-Man: Homecoming (2017),Action
+82,Spider-Man: Far From Home (2019),Action
+83,Spider-Man: No Way Home (2021),Action
+84,The Amazing Spider-Man (2012),Action
+85,The Amazing Spider-Man 2 (2014),Action
+86,Spider-Man (2002),Action
+87,Spider-Man 2 (2004),Action
+88,Spider-Man 3 (2007),Action
+89,The Batman (2022),Action
+90,Man of Steel (2013),Drama
+91,Wonder Woman (2017),Action
+92,Aquaman (2018),Action
+93,Justice League (2017),Action
+94,Zack Snyder's Justice League (2021),Action
+95,The Suicide Squad (2021),Drama
+96,Suicide Squad (2016),Drama
+97,Shazam! (2019),Drama
+98,Shazam! Fury of the Gods (2023),Drama
+99,The Lord of the Rings: The Two Towers (2002),"Adventure, Horror"
+100,The Hobbit: An Unexpected Journey (2012),"Adventure, Horror"
+101,The Hobbit: The Desolation of Smaug (2013),"Adventure, Horror"
+102,The Hobbit: The Battle of the Five Armies (2014),"Adventure, Horror"
+103,Star Wars: Episode IV - A New Hope (1977),Adventure
+104,Star Wars: Episode V - The Empire Strikes Back (1980),Adventure
+105,Star Wars: Episode VI - Return of the Jedi (1983),Adventure
+106,Star Wars: Episode I - The Phantom Menace (1999),Adventure
+107,Star Wars: Episode II - Attack of the Clones (2002),Adventure
+108,Star Wars: Episode III - Revenge of the Sith (2005),"Adventure, Horror"
+109,Star Wars: The Force Awakens (2015),Adventure
+110,Star Wars: The Last Jedi (2017),Adventure
+111,Star Wars: The Rise of Skywalker (2019),Adventure
+112,Rogue One: A Star Wars Story (2016),Adventure
+113,Solo: A Star Wars Story (2018),Adventure
+114,Harry Potter and the Sorcerer's Stone (2001),Drama
+115,Harry Potter and the Chamber of Secrets (2002),Drama
+116,Harry Potter and the Prisoner of Azkaban (2004),Drama
+117,Harry Potter and the Goblet of Fire (2005),Drama
+118,Harry Potter and the Order of the Phoenix (2007),Drama
+119,Harry Potter and the Half-Blood Prince (2009),Drama
+120,Harry Potter and the Deathly Hallows: Part 1 (2010),Drama
+121,Harry Potter and the Deathly Hallows: Part 2 (2011),Drama
+122,Fantastic Beasts and Where to Find Them (2016),Drama
+123,Fantastic Beasts: The Crimes of Grindelwald (2018),Drama
+124,Fantastic Beasts: The Secrets of Dumbledore (2022),Drama
+125,The Hunger Games (2012),Drama
+126,The Hunger Games: Catching Fire (2013),Drama
+127,The Hunger Games: Mockingjay - Part 1 (2014),Drama
+128,The Hunger Games: Mockingjay - Part 2 (2015),Drama
+129,The Ballad of Songbirds & Snakes (2023),Drama
+130,The Bourne Identity (2002),"Action, Horror"
+131,The Bourne Supremacy (2004),"Action, Animation"
+132,The Bourne Ultimatum (2007),Action
+133,The Bourne Legacy (2012),Action
+134,Mission: Impossible (1996),Action
+135,Mission: Impossible II (2000),Action
+136,Mission: Impossible III (2006),Action
+137,Mission: Impossible - Ghost Protocol (2011),Action
+138,Mission: Impossible - Rogue Nation (2015),Action
+139,Mission: Impossible - Fallout (2018),Action
+140,Top Gun (1986),Action
+141,Top Gun: Maverick (2022),Action
+142,Indiana Jones and the Raiders of the Lost Ark (1981),Adventure
+143,Indiana Jones and the Temple of Doom (1984),Adventure
+144,Indiana Jones and the Last Crusade (1989),Adventure
+145,Indiana Jones and the Kingdom of the Crystal Skull (2008),Adventure
+146,Indiana Jones and the Dial of Destiny (2023),Adventure
+147,Jurassic Park (1993),Adventure
+148,The Lost World: Jurassic Park (1997),Adventure
+149,Jurassic Park III (2001),Adventure
+150,Jurassic World (2015),Adventure
+151,Jurassic World: Fallen Kingdom (2018),Adventure
+152,Jurassic World Dominion (2022),Adventure
+153,Pirates of the Caribbean: The Curse of the Black Pearl (2003),Adventure
+154,Pirates of the Caribbean: Dead Man's Chest (2006),Adventure
+155,Pirates of the Caribbean: At World's End (2007),Adventure
+156,Pirates of the Caribbean: On Stranger Tides (2011),Adventure
+157,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005)","Adventure, Horror"
+158,The Chronicles of Narnia: Prince Caspian (2008),Adventure
+159,The Chronicles of Narnia: The Voyage of the Dawn Treader (2010),Adventure
+160,The Matrix Reloaded (2003),"Action, Sci-Fi"
+161,The Matrix Revolutions (2003),"Action, Sci-Fi"
+162,The Matrix Resurrections (2021),"Action, Sci-Fi"
+163,The Terminator (1984),Action
+164,Terminator 3: Rise of the Machines (2003),Action
+165,Terminator Salvation (2009),Action
+166,Terminator Genisys (2015),Action
+167,Rocky (1976),Drama
+168,Rocky II (1979),Drama
+169,Rocky III (1982),Drama
+170,Rocky IV (1985),Drama
+171,Rocky V (1990),Drama
+172,Creed (2015),Drama
+173,Creed II (2018),Drama
+174,Creed III (2023),Drama
+175,Rambo: First Blood (1982),Action
+176,Rambo: First Blood Part II (1985),Action
+177,Rambo III (1988),Action
+178,Rambo (2008),Action
+179,Rambo: Last Blood (2019),Action
+180,The Fast and the Furious (2001),Action
+181,2 Fast 2 Furious (2003),Action
+182,The Fast and the Furious: Tokyo Drift (2006),Action
+183,Fast & Furious (2009),Action
+184,Fast Five (2011),Action
+185,Fast & Furious 6 (2013),Action
+186,Furious 7 (2015),Action
+187,The Fate of the Furious (2017),Action
+188,F9: The Fast Saga (2021),Action
+189,Fast X (2023),Action
+190,The Hangover (2009),Comedy
+191,The Hangover Part II (2011),Comedy
+192,The Hangover Part III (2013),Comedy
+193,John Wick (2014),Action
+194,John Wick: Chapter 2 (2017),Action
+195,John Wick: Chapter 3 – Parabellum (2019),Action
+196,John Wick: Chapter 4 (2023),Action
+197,Taken (2008),Drama
+198,Taken 2 (2012),Drama
+199,Taken 3 (2014),Drama
+200,The Exorcist (1973),Horror
+201,Hereditary (2018),Horror
+202,Get Out (2017),Horror
+203,A Quiet Place (2018),Horror
+204,A Quiet Place Part II (2020),Horror
+205,It (2017),Horror
+206,It Chapter Two (2019),Horror
+207,The Conjuring (2013),Horror
+208,The Conjuring 2 (2016),Horror
+209,The Conjuring: The Devil Made Me Do It (2021),Horror
+210,Insidious (2010),Horror
+211,Insidious: Chapter 2 (2013),Horror
+212,Insidious: The Last Key (2018),Horror
+213,Insidious: The Red Door (2023),Horror
+214,Annabelle (2014),Horror
+215,Annabelle: Creation (2017),Horror
+216,Annabelle Comes Home (2019),Horror
+217,The Nun (2018),Horror
+218,The Nun II (2023),Horror
+219,La La Land (2016),"Drama, Romance"
+220,The Grand Budapest Hotel (2014),Comedy
+221,Birdman (2014),Drama
+222,Moonlight (2016),Drama
+223,The Revenant (2015),Drama
+224,The Hateful Eight (2015),Drama
+225,Inglourious Basterds (2009),Drama
+226,Once Upon a Time in Hollywood (2019),Animation
+227,Kill Bill: Vol. 1 (2003),Drama
+228,Kill Bill: Vol. 2 (2004),Drama
+229,Reservoir Dogs (1992),Drama
+230,The Irishman (2019),Drama
+231,Taxi Driver (1976),Drama
+232,Raging Bull (1980),Drama
+233,Shutter Island (2010),Thriller
+234,Oppenheimer (2023),"Biography, Drama"
+235,Tenet (2020),Drama
+236,Dunkirk (2017),Drama
+237,The Big Short (2015),Drama
+238,Spotlight (2015),Drama
+239,Arrival (2016),Sci-Fi
+240,Blade Runner (1982),"Action, Sci-Fi"
+241,Blade Runner 2049 (2017),"Action, Sci-Fi"
+242,Dune (2021),"Action, Sci-Fi"
+243,Dune: Part Two (2024),"Action, Sci-Fi"
+244,Everything Everywhere All at Once (2022),Drama
+245,The Whale (2022),Drama
+246,Nope (2022),Sci-Fi
+247,Barbie (2023),Drama
+248,Poor Things (2023),Drama
+249,The Holdovers (2023),Drama
+250,Past Lives (2023),Drama
+251,Anatomy of a Fall (2023),Drama
+252,The Intouchables (2011),Drama
+253,The Lives of Others (2006),Drama
+254,Pan's Labyrinth (2006),Drama
+255,Life Is Beautiful (1997),Drama
+256,Cinema Paradiso (1988),Drama
+257,Amadeus (1984),Drama
+258,Apocalypse Now (1979),Drama
+259,Full Metal Jacket (1987),Drama
+260,Platoon (1986),Drama
+261,The Great Dictator (1940),Drama
+262,Modern Times (1936),Drama
+263,City Lights (1931),Horror
+264,Casablanca (1942),Drama
+265,Psycho (1960),Drama
+266,Vertigo (1958),Drama
+267,Rear Window (1954),Drama
+268,North by Northwest (1959),Drama
+269,Frozen (2013),Animation
+270,Frozen II (2019),Animation
+271,Moana (2016),Animation
+272,Zootopia (2016),Animation
+273,Big Hero 6 (2014),Drama
+274,Tangled (2010),Animation
+275,Beauty and the Beast (1991),Animation
+276,Aladdin (1992),Animation
+277,Mulan (1998),Animation
+278,The Little Mermaid (1989),"Animation, Horror"
+279,Hercules (1997),Drama
+280,Tarzan (1999),Drama
+281,Pocahontas (1995),Drama
+282,The Hunchback of Notre Dame (1996),Drama
+283,Encanto (2021),Animation
+284,Luca (2021),Animation
+285,Soul (2020),Animation
+286,Onward (2020),Animation
+287,Brave (2012),Animation
+288,Cars (2006),Animation
+289,Cars 2 (2011),Animation
+290,Cars 3 (2017),Animation
+291,Toy Story 2 (1999),Animation
+292,Finding Dory (2016),Drama
+293,Monsters University (2013),"Animation, Horror"
+294,The Good Dinosaur (2015),Animation
+295,Lightyear (2022),Animation
+296,The Big Lebowski (1998),Comedy
+297,Superbad (2007),"Animation, Comedy"
+298,Step Brothers (2008),Comedy
+299,Anchorman: The Legend of Ron Burgundy (2004),Comedy
+300,Borat (2006),Comedy
+301,The 40-Year-Old Virgin (2005),Drama
+302,Knives Out (2019),Drama
+303,Glass Onion: A Knives Out Mystery (2022),Drama
+304,The Devil Wears Prada (2006),Drama
+305,Mean Girls (2004),Comedy
+306,Little Women (2019),"Horror, Romance"
+307,The Notebook (2004),Romance
+308,A Star Is Born (2018),Drama
+309,Crazy Rich Asians (2018),Drama
+310,The Fault in Our Stars (2014),Drama
+311,The Theory of Everything (2014),"Biography, Drama"
+312,The Imitation Game (2014),"Biography, Drama, Horror"
+313,Her (2013),Drama
+314,Ex Machina (2014),Drama
+315,The Martian (2015),Sci-Fi
+316,Gravity (2013),"Horror, Sci-Fi"
+317,Hidden Figures (2016),Drama
+318,Dallas Buyers Club (2013),Drama
+319,The Fighter (2010),Drama
+320,Moneyball (2011),Drama
+321,Rush (2013),Drama
+322,Ford v Ferrari (2019),Drama
+323,Bohemian Rhapsody (2018),Biography
+324,Rocketman (2019),Biography
+325,1917 (2019),War
+326,Hacksaw Ridge (2016),"Biography, Horror"
+327,The King's Speech (2010),Biography
+328,The Hurt Locker (2008),Drama
+329,Black Hawk Down (2001),Drama
+330,Braveheart (1995),Animation
+331,Troy (2004),War
+332,Kingdom of Heaven (2005),Drama
+333,The Ring (2002),Horror
+334,The Sixth Sense (1999),Drama
+335,Saw (2004),Horror
+336,Saw II (2005),Horror
+337,Saw III (2006),Horror
+338,Saw IV (2007),Horror
+339,Saw V (2008),Horror
+340,Saw VI (2009),Horror
+341,Saw 3D (2010),Horror
+342,Jigsaw (2017),Horror
+343,Spiral (2021),Horror
+344,Scream (1996),Horror
+345,Scream 2 (1997),Horror
+346,Scream 3 (2000),Horror
+347,Scream 4 (2011),Horror
+348,Scream (2022),Horror
+349,Scream VI (2023),Horror
+350,Halloween (1978),Horror
+351,Halloween H20 (1998),Horror
+352,Halloween (2018),Horror
+353,Halloween Kills (2021),Horror
+354,Halloween Ends (2022),Horror
+355,Shrek (2001),Animation
+356,Shrek 2 (2004),Animation
+357,Shrek the Third (2007),Animation
+358,Shrek Forever After (2010),Animation
+359,Puss in Boots (2011),Animation
+360,Puss in Boots: The Last Wish (2022),Animation
+361,Kung Fu Panda (2008),Animation
+362,Kung Fu Panda 2 (2011),Animation
+363,Kung Fu Panda 3 (2016),Animation
+364,How to Train Your Dragon (2010),Animation
+365,How to Train Your Dragon 2 (2014),Animation
+366,How to Train Your Dragon: The Hidden World (2019),Animation
+367,Despicable Me (2010),Animation
+368,Despicable Me 2 (2013),Animation
+369,Despicable Me 3 (2017),Animation
+370,Minions (2015),Animation
+371,Minions: The Rise of Gru (2022),Animation
+372,Madagascar (2005),Animation
+373,Madagascar: Escape 2 Africa (2008),Animation
+374,Madagascar 3: Europe's Most Wanted (2012),Animation
+375,Ice Age (2002),Animation
+376,Ice Age: The Meltdown (2006),Animation
+377,Ice Age: Dawn of the Dinosaurs (2009),Animation
+378,Ice Age: Continental Drift (2012),Animation
+379,Ice Age: Collision Course (2016),Animation
+380,The Super Mario Bros. Movie (2023),Animation
+381,Across the Spider-Verse (2023),Animation
+382,Into the Spider-Verse (2018),Animation
+383,The Flash (2023),Drama
+384,Aquaman and the Lost Kingdom (2023),Action
+385,RRR (2022),Drama
+386,3 Idiots (2009),Drama
+387,Dangal (2016),Drama
+388,Your Name (2016),Drama
+389,Shoplifters (2018),Drama
+390,Drive My Car (2021),Drama
+391,Train to Busan (2016),Drama
+392,The Handmaiden (2016),Drama
+393,A Separation (2011),Drama

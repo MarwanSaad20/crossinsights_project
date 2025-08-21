@@ -38,17 +38,12 @@ class TestKNNRecommender(unittest.TestCase):
     def test_fit(self):
         self.logger.info("Testing KNNRecommender.fit...")
         try:
-            # استدعاء fit() أولاً
             self.knn.fit(self.ratings)
-
-            # ثم التحقق من النتائج
             self.assertIsNotNone(self.knn.user_item_matrix)
             self.assertIsNotNone(self.knn.user_similarity)
             self.assertIsNotNone(self.knn.item_similarity)
-
             if self.knn.user_item_matrix is not None:
                 self.assertEqual(self.knn.user_item_matrix.shape, (2, 3))
-
             self.logger.info("KNNRecommender.fit test passed")
         except Exception as e:
             self.logger.error(f"KNNRecommender.fit test failed: {str(e)}")
@@ -71,7 +66,8 @@ class TestKNNRecommender(unittest.TestCase):
         self.logger.info("Testing KNNRecommender.predict_item_item...")
         try:
             self.knn.fit(self.ratings)
-            recommendations = self.knn.predict_item_item(user_id=1, n_recommendations=2)
+            # استخدام movie_id بدلاً من user_id (مثلاً 101 موجود بالبيانات)
+            recommendations = self.knn.predict_item_item(movie_id=101, n_recommendations=2)
             self.assertIsInstance(recommendations, pd.DataFrame)
             self.assertTrue('movie_id' in recommendations.columns)
             self.assertTrue('predicted_rating' in recommendations.columns)

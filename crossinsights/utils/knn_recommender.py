@@ -1,4 +1,9 @@
 # crossinsights/utils/knn_recommender.py
+"""
+Professional KNN-based recommender system for CrossInsights.
+Supports user-user and item-item collaborative filtering with improved genre-based filtering.
+"""
+
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
@@ -6,7 +11,7 @@ import joblib
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-from crossinsights.utils.data_loader import load_config, save_processed_data
+from crossinsights.utils.data_loader import load_config, save_processed_data, load_data
 import logging
 from typing import Optional, cast
 
@@ -33,9 +38,10 @@ class KNNRecommender:
         self.user_item_matrix: Optional[pd.DataFrame] = None
         self.user_similarity: Optional[pd.DataFrame] = None
         self.item_similarity: Optional[pd.DataFrame] = None
+        self.movies: Optional[pd.DataFrame] = None
         self.logger = logger
 
-    def fit(self, ratings: pd.DataFrame) -> None:
+    def fit(self, ratings: pd.DataFrame, movies: Optional[pd.DataFrame] = None) -> None:
         """Build user-item matrix and compute similarities."""
         self.logger.info("Building user-item matrix...")
         if not {'user_id', 'movie_id', 'rating'}.issubset(ratings.columns):
@@ -43,28 +49,53 @@ class KNNRecommender:
             raise ValueError("Required columns not found in ratings DataFrame")
 
         # إنشاء مصفوفة المستخدم-العنصر
-        self.user_item_matrix = ratings.pivot(index='user_id', columns='movie_id', values='rating').fillna(0)
-        self.logger.info(f"User-item matrix created with shape: {self.user_item_matrix.shape}")
+        try:
+            self.user_item_matrix = ratings.pivot(index='user_id', columns='movie_id', values='rating').fillna(0)
+            self.logger.info(f"User-item matrix created with shape: {self.user_item_matrix.shape}")
+        except Exception as e:
+            self.logger.error(f"Failed to create user-item matrix: {str(e)}")
+            raise
 
-        # حساب التشابه بين المستخدمين (user-user)
+        # تحميل بيانات الأفلام لتصفية الأنواع
+        if movies is None:
+            config = load_config()
+            movies_path = config['data']['processed']['movies']
+            self.movies = load_data(movies_path)
+        else:
+            self.movies = movies
+
+        # التحقق من وجود عمود الأنواع
+        if self.movies is not None and 'genres' not in self.movies.columns:
+            self.logger.warning("Genres column not found in movies DataFrame. Adding empty genres.")
+            self.movies['genres'] = 'Unknown'
+
+        # حساب التشابه بين المستخدمين
         self.logger.info(f"Computing {self.similarity_metric} similarity for users...")
-        user_similarity_array = cosine_similarity(self.user_item_matrix)
-        self.user_similarity = pd.DataFrame(
-            user_similarity_array,
-            index=self.user_item_matrix.index,
-            columns=self.user_item_matrix.index
-        )
-        self.logger.info("User-user similarity computed")
+        try:
+            user_similarity_array = cosine_similarity(self.user_item_matrix)
+            self.user_similarity = pd.DataFrame(
+                user_similarity_array,
+                index=self.user_item_matrix.index,
+                columns=self.user_item_matrix.index
+            )
+            self.logger.info("User-user similarity computed")
+        except Exception as e:
+            self.logger.error(f"Failed to compute user-user similarity: {str(e)}")
+            raise
 
-        # حساب التشابه بين الأفلام (item-item)
+        # حساب التشابه بين الأفلام
         self.logger.info(f"Computing {self.similarity_metric} similarity for items...")
-        item_similarity_array = cosine_similarity(self.user_item_matrix.T)
-        self.item_similarity = pd.DataFrame(
-            item_similarity_array,
-            index=self.user_item_matrix.columns,
-            columns=self.user_item_matrix.columns
-        )
-        self.logger.info("Item-item similarity computed")
+        try:
+            item_similarity_array = cosine_similarity(self.user_item_matrix.T)
+            self.item_similarity = pd.DataFrame(
+                item_similarity_array,
+                index=self.user_item_matrix.columns,
+                columns=self.user_item_matrix.columns
+            )
+            self.logger.info("Item-item similarity computed")
+        except Exception as e:
+            self.logger.error(f"Failed to compute item-item similarity: {str(e)}")
+            raise
 
     def predict_user_user(self, user_id: int, n_recommendations: int = 10) -> pd.DataFrame:
         """Generate recommendations using user-user collaborative filtering."""
@@ -87,7 +118,7 @@ class KNNRecommender:
         unrated_movies_mask = user_ratings == 0
         unrated_movies = cast(pd.Series, user_ratings[unrated_movies_mask]).index
 
-        # توقع التقييمات بناءً على الجيران
+        # توقع التقييمات
         predictions = []
         for movie_id in unrated_movies:
             neighbor_ratings = cast(pd.Series, self.user_item_matrix.loc[neighbor_ids, movie_id])
@@ -106,45 +137,74 @@ class KNNRecommender:
         self.logger.info(f"Generated {len(recommendations)} recommendations for user {user_id}")
         return recommendations
 
-    def predict_item_item(self, user_id: int, n_recommendations: int = 10) -> pd.DataFrame:
-        """Generate recommendations using item-item collaborative filtering."""
-        self.logger.info(f"Generating item-item recommendations for user {user_id}")
-        if self.user_item_matrix is None or self.item_similarity is None:
-            self.logger.error("Model not fitted. Call fit() first.")
-            raise ValueError("Model not fitted. Call fit() first.")
+    def predict_item_item(self, movie_id: int, n_recommendations: int = 10, use_genre_filtering: bool = True) -> pd.DataFrame:
+        """Generate recommendations using item-item collaborative filtering with optional smart genre filtering."""
+        self.logger.info(f"Generating item-item recommendations for movie_id {movie_id}")
+        if self.user_item_matrix is None or self.item_similarity is None or self.movies is None:
+            self.logger.error("Model not fitted or movies data not loaded. Call fit() first.")
+            raise ValueError("Model not fitted or movies data not loaded.")
 
-        if user_id not in self.user_item_matrix.index:
-            self.logger.warning(f"User {user_id} not found. Cold-start problem detected.")
+        if movie_id not in self.item_similarity.index:
+            self.logger.warning(f"Movie {movie_id} not found in item similarity matrix.")
             return pd.DataFrame(columns=['movie_id', 'predicted_rating'])
 
-        # الأفلام التي قيّمها المستخدم
-        user_ratings = cast(pd.Series, self.user_item_matrix.loc[user_id])
-        rated_movies_mask = user_ratings > 0
-        rated_movies = cast(pd.Series, user_ratings[rated_movies_mask]).index
+        # الحصول على تشابه الأفلام
+        similarities = cast(pd.Series, self.item_similarity.loc[movie_id]).sort_values(ascending=False)[1:]
 
-        # الأفلام التي لم يقم المستخدم بتقييمها
-        unrated_movies_mask = user_ratings == 0
-        unrated_movies = cast(pd.Series, user_ratings[unrated_movies_mask]).index
+        # إنشاء التوصيات الأولية مع عدد أكبر لضمان التصفية اللاحقة
+        initial_count = max(n_recommendations * 3, 50)  # أخذ عدد أكبر لضمان وجود توصيات بعد التصفية
+        initial_recommendations = pd.DataFrame({
+            'movie_id': similarities.head(initial_count).index.astype(int),
+            'predicted_rating': similarities.head(initial_count).values
+        })
 
-        # توقع التقييمات بناءً على تشابه الأفلام
-        predictions = []
-        for movie_id in unrated_movies:
-            similarities = cast(pd.Series, self.item_similarity.loc[movie_id])[rated_movies]
-            valid_ratings = user_ratings[rated_movies]
-            valid_similarities = similarities[similarities > 0]
-            valid_ratings = valid_ratings[similarities > 0]
-            if valid_ratings.empty:
-                continue
-            weighted_sum = np.sum(valid_ratings * valid_similarities)
-            similarity_sum = np.sum(np.abs(valid_similarities))
-            predicted_rating = weighted_sum / similarity_sum if similarity_sum > 0 else 0
-            predictions.append({'movie_id': movie_id, 'predicted_rating': predicted_rating})
+        if not use_genre_filtering or initial_recommendations.empty:
+            final_recommendations = initial_recommendations.head(n_recommendations)
+            self.logger.info(f"Generated {len(final_recommendations)} recommendations for movie_id {movie_id} (no genre filtering)")
+            return final_recommendations
 
-        recommendations = pd.DataFrame(predictions)
-        if not recommendations.empty:
-            recommendations = recommendations.sort_values(by='predicted_rating', ascending=False).head(n_recommendations)
-        self.logger.info(f"Generated {len(recommendations)} recommendations for user {user_id}")
-        return recommendations
+        # تطبيق تصفية الأنواع الذكية
+        movie_info = self.movies[self.movies['movie_id'] == movie_id]
+        if movie_info.empty or 'genres' not in movie_info.columns or pd.isna(movie_info['genres'].iloc[0]):
+            self.logger.warning(f"No valid genres found for movie_id {movie_id}. Returning recommendations without genre filtering.")
+            final_recommendations = initial_recommendations.head(n_recommendations)
+            self.logger.info(f"Generated {len(final_recommendations)} recommendations for movie_id {movie_id}")
+            return final_recommendations
+
+        # الحصول على أنواع الفيلم المدخل
+        movie_genres = movie_info['genres'].iloc[0].split('|')
+        self.logger.info(f"Source movie genres: {movie_genres}")
+
+        # تصفية التوصيات بناءً على الأنواع
+        filtered_movies = self.movies[self.movies['movie_id'].isin(initial_recommendations['movie_id'])].copy()
+        filtered_movies['genre_match'] = filtered_movies['genres'].apply(
+            lambda x: any(g in x.split('|') for g in movie_genres) if pd.notna(x) else False
+        )
+
+        # ترتيب التوصيات: أولاً التي تتطابق أنواعها، ثم الباقي
+        genre_matched = filtered_movies[filtered_movies['genre_match']]['movie_id']
+        genre_unmatched = filtered_movies[~filtered_movies['genre_match']]['movie_id']
+
+        # دمج التوصيات مع إعطاء أولوية للأفلام المتطابقة الأنواع
+        matched_recommendations = initial_recommendations[initial_recommendations['movie_id'].isin(genre_matched)]
+        unmatched_recommendations = initial_recommendations[initial_recommendations['movie_id'].isin(genre_unmatched)]
+
+        # إذا لم نجد توصيات متطابقة الأنواع كافية، نأخذ من غير المتطابقة
+        if len(matched_recommendations) >= n_recommendations:
+            final_recommendations = matched_recommendations.head(n_recommendations)
+            self.logger.info(f"Generated {len(final_recommendations)} genre-matched recommendations")
+        else:
+            # أخذ كل المتطابقة + بعض غير المتطابقة
+            remaining_count = n_recommendations - len(matched_recommendations)
+            combined_recommendations = pd.concat([
+                matched_recommendations,
+                unmatched_recommendations.head(remaining_count)
+            ], ignore_index=True)
+            final_recommendations = combined_recommendations.head(n_recommendations)
+            self.logger.info(f"Generated {len(matched_recommendations)} genre-matched + {len(final_recommendations) - len(matched_recommendations)} other recommendations")
+
+        self.logger.info(f"Generated {len(final_recommendations)} total recommendations for movie_id {movie_id}")
+        return final_recommendations
 
     def save_model(self, output_path: str) -> None:
         """Save the KNN model."""
@@ -174,6 +234,10 @@ def run_knn_recommendations(ratings: pd.DataFrame, user_id: int = 1, n_recommend
     logger.info(f"Running {mode} KNN recommendations...")
     config = load_config()
 
+    # تحميل بيانات الأفلام
+    movies_path = config['data']['processed']['movies']
+    movies = load_data(movies_path)
+
     # إنشاء نموذج KNN
     knn = KNNRecommender(
         k_neighbors=config.get('models', {}).get('knn', {}).get('k_neighbors', 5),
@@ -181,7 +245,7 @@ def run_knn_recommendations(ratings: pd.DataFrame, user_id: int = 1, n_recommend
     )
 
     # تدريب النموذج
-    knn.fit(ratings)
+    knn.fit(ratings, movies)
 
     # حفظ النموذج
     knn_model_path = os.path.join(config['models']['output_dir'], 'knn_model.pkl')

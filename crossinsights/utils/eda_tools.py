@@ -68,8 +68,16 @@ def plot_age_vs_ratings(users: pd.DataFrame, ratings: pd.DataFrame):
         logger.error("Required columns not found in users or ratings DataFrame")
         raise ValueError("Required columns not found in users or ratings DataFrame")
 
+    # تحويل user_id إلى Int64 لضمان التوافق
+    ratings['user_id'] = pd.to_numeric(ratings['user_id'], errors='coerce').astype('Int64')
+    users['user_id'] = pd.to_numeric(users['user_id'], errors='coerce').astype('Int64')
+
+    # إزالة أي صفوف تحتوي على user_id غير صالح
+    ratings = ratings.dropna(subset=['user_id'])
+    users = users.dropna(subset=['user_id'])
+
     user_ratings = ratings.groupby('user_id')['rating'].mean().reset_index()
-    merged = user_ratings.merge(users[['user_id', 'age']], on='user_id')
+    merged = user_ratings.merge(users[['user_id', 'age']], on='user_id', how='inner')
 
     plt.figure(figsize=(10, 6))
     sns.scatterplot(x='age', y='rating', data=merged)

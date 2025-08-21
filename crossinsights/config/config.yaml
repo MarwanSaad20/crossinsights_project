@@ -1,3 +1,4 @@
+# C:/crossinsights_project/crossinsights/config/config.yaml
 root_dir: "C:/crossinsights_project/crossinsights"
 
 data:
@@ -10,7 +11,7 @@ data:
     movies: "C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv"
     ratings: "C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv"
     knn_recommendations: "C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv"
-    predicted_ratings: "C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv" # جديد
+    predicted_ratings: "C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv"
 
 models:
   output_dir: "C:/crossinsights_project/crossinsights/models/"
@@ -20,14 +21,18 @@ models:
   knn:
     k_neighbors: 5
     similarity_metric: "cosine"
-  linear_regression: # جديد
+  linear_regression:
     fit_intercept: true
-  random_forest: # جديد
+  random_forest:
     n_estimators: 100
     max_depth: 10
     random_state: 42
 
 eda:
   notebook: "C:/crossinsights_project/crossinsights/analysis/eda.ipynb"
+
 analysis:
-  predictors: "C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png" # جديد
+  predictors: "C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png"
+
+cli: # جديد
+  log_file: "C:/crossinsights_project/crossinsights/logs/cli_recommender.log"

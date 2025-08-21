@@ -1,3 +1,4 @@
+# crossinsights/utils/preprocessing.py
 import pandas as pd
 from sklearn.preprocessing import MultiLabelBinarizer
 from crossinsights.utils.data_loader import load_config, save_processed_data, load_raw_data
@@ -36,6 +37,13 @@ def clean_users(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     report_missing(df, "users")
 
+    # Ensure user_id is int64
+    df['user_id'] = pd.to_numeric(df['user_id'], errors='coerce').astype('Int64')
+    invalid_users = df['user_id'].isna().sum()
+    if invalid_users > 0:
+        logger.warning(f"Found {invalid_users} invalid user_id values. Dropping them.")
+        df = df.dropna(subset=['user_id'])
+
     # Fill missing values intelligently
     df['age'] = df['age'].fillna(df['age'].median()).astype(int)
     df['gender'] = df['gender'].fillna('Unknown').astype(str)
@@ -50,6 +58,13 @@ def clean_movies(df: pd.DataFrame) -> pd.DataFrame:
     logger.info("Cleaning movies data...")
     df = df.copy()
     report_missing(df, "movies")
+
+    # Ensure movie_id is int64
+    df['movie_id'] = pd.to_numeric(df['movie_id'], errors='coerce').astype('Int64')
+    invalid_movies = df['movie_id'].isna().sum()
+    if invalid_movies > 0:
+        logger.warning(f"Found {invalid_movies} invalid movie_id values. Dropping them.")
+        df = df.dropna(subset=['movie_id'])
 
     # Fill missing titles
     df['title'] = df['title'].fillna('Unknown').astype(str)
@@ -86,11 +101,31 @@ def clean_ratings(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     report_missing(df, "ratings")
 
-    # Clip invalid ratings
+    # Ensure user_id and movie_id are int64
+    df['user_id'] = pd.to_numeric(df['user_id'], errors='coerce').astype('Int64')
+    df['movie_id'] = pd.to_numeric(df['movie_id'], errors='coerce').astype('Int64')
+    invalid_ids = df[['user_id', 'movie_id']].isna().sum()
+    if invalid_ids.sum() > 0:
+        logger.warning(f"Found invalid IDs: {invalid_ids.to_dict()}. Dropping them.")
+        df = df.dropna(subset=['user_id', 'movie_id'])
+
+    # Convert rating column to numeric, coercing invalid values to NaN
+    df['rating'] = pd.to_numeric(df['rating'], errors='coerce')
+
+    # Log and drop rows with invalid (NaN) ratings
+    invalid_count = df['rating'].isna().sum()
+    if invalid_count > 0:
+        logger.warning(f"Found {invalid_count} invalid (non-numeric) ratings. Dropping them.")
+        df = df.dropna(subset=['rating'])
+
+    # Ensure ratings are within valid range (1-5)
     invalid_ratings = df[~df['rating'].between(1, 5)].shape[0]
-    df['rating'] = df['rating'].clip(1, 5)
+    if invalid_ratings > 0:
+        logger.warning(f"Found {invalid_ratings} ratings outside valid range (1-5). Dropping them.")
+        df = df[df['rating'].between(1, 5)]
 
     # Convert timestamp safely
+    df['timestamp'] = pd.to_numeric(df['timestamp'], errors='coerce').astype('Int64')
     df['timestamp'] = pd.to_datetime(df['timestamp'], unit='s', errors='coerce')
 
     # Aggregate duplicate user-movie ratings
@@ -99,8 +134,7 @@ def clean_ratings(df: pd.DataFrame) -> pd.DataFrame:
         logger.warning(f"Found {duplicates_count} duplicate user-movie pairs. Aggregating by mean rating.")
         df = pd.DataFrame(df.groupby(['user_id', 'movie_id'])['rating'].mean()).reset_index()
 
-
-    logger.info(f"Ratings cleaned: {invalid_ratings} invalid ratings clipped")
+    logger.info(f"Ratings cleaned: {len(df)} valid ratings remaining")
     return df
 
 def preprocess_all() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
