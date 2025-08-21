@@ -398,3 +398,235 @@
 2025-08-20 18:01:00,743 - INFO - Model Trained: Success
 2025-08-20 18:01:00,743 - INFO - Recommendations Generated: Success
 2025-08-20 18:01:00,743 - INFO - Pipeline completed successfully!
+2025-08-21 08:55:24,549 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:24,552 - INFO - Configuration loaded successfully
+2025-08-21 08:55:24,552 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:24,555 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:24,556 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:24,580 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:24,580 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:24,588 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:24,588 - INFO - Training prediction models...
+2025-08-21 08:55:24,588 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:24,591 - INFO - Configuration loaded successfully
+2025-08-21 08:55:24,591 - INFO - Preparing features table for prediction...
+2025-08-21 08:55:24,992 - INFO - Features table prepared with 364 columns
+2025-08-21 08:55:35,664 - INFO - Linear Regression model saved to C:/crossinsights_project/crossinsights/models/linear_regression_model.pkl
+2025-08-21 08:55:35,665 - INFO - Random Forest model saved to C:/crossinsights_project/crossinsights/models/random_forest_model.pkl
+2025-08-21 08:55:35,666 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:35,683 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:35,683 - INFO - Predictions saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:37,261 - INFO - Prediction analysis plot saved to C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png
+2025-08-21 08:55:37,277 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:37,280 - INFO - Configuration loaded successfully
+2025-08-21 08:55:37,280 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:37,281 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:37,281 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:37,301 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:37,302 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:37,308 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:37,308 - INFO - Training prediction models...
+2025-08-21 08:55:37,308 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:37,311 - INFO - Configuration loaded successfully
+2025-08-21 08:55:37,311 - INFO - Preparing features table for prediction...
+2025-08-21 08:55:37,630 - INFO - Features table prepared with 364 columns
+2025-08-21 08:55:47,978 - INFO - Linear Regression model saved to C:/crossinsights_project/crossinsights/models/linear_regression_model.pkl
+2025-08-21 08:55:47,978 - INFO - Random Forest model saved to C:/crossinsights_project/crossinsights/models/random_forest_model.pkl
+2025-08-21 08:55:47,979 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:47,991 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:47,992 - INFO - Predictions saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:48,208 - INFO - Prediction analysis plot saved to C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png
+2025-08-21 08:55:48,215 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:48,218 - INFO - Configuration loaded successfully
+2025-08-21 08:55:48,218 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:48,221 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:48,222 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:48,240 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:48,240 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:48,245 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:48,245 - INFO - Training prediction models...
+2025-08-21 08:55:48,246 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:48,248 - INFO - Configuration loaded successfully
+2025-08-21 08:55:48,248 - INFO - Preparing features table for prediction...
+2025-08-21 08:55:48,545 - INFO - Features table prepared with 364 columns
+2025-08-21 08:55:59,016 - INFO - Linear Regression model saved to C:/crossinsights_project/crossinsights/models/linear_regression_model.pkl
+2025-08-21 08:55:59,017 - INFO - Random Forest model saved to C:/crossinsights_project/crossinsights/models/random_forest_model.pkl
+2025-08-21 08:55:59,018 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:59,029 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:59,029 - INFO - Predictions saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:59,242 - INFO - Prediction analysis plot saved to C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png
+2025-08-21 08:55:59,248 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:59,252 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:55:59,253 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:59,255 - INFO - Configuration loaded successfully
+2025-08-21 08:55:59,256 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:59,257 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:55:59,257 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:59,277 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:55:59,277 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:59,282 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:55:59,283 - INFO - Training prediction models...
+2025-08-21 08:55:59,283 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:55:59,286 - INFO - Configuration loaded successfully
+2025-08-21 08:55:59,286 - INFO - Preparing features table for prediction...
+2025-08-21 08:55:59,644 - INFO - Features table prepared with 364 columns
+2025-08-21 08:58:29,395 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:58:29,401 - INFO - Configuration loaded successfully
+2025-08-21 08:58:29,404 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:58:29,407 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:58:29,407 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:58:29,430 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:58:29,431 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:58:29,437 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:58:29,439 - INFO - Training prediction models...
+2025-08-21 08:58:29,440 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:58:29,447 - INFO - Configuration loaded successfully
+2025-08-21 08:58:29,449 - INFO - Preparing features table for prediction...
+2025-08-21 08:58:29,837 - INFO - Features table prepared with 364 columns
+2025-08-21 08:58:40,297 - INFO - Linear Regression model saved to C:/crossinsights_project/crossinsights/models/linear_regression_model.pkl
+2025-08-21 08:58:40,297 - INFO - Random Forest model saved to C:/crossinsights_project/crossinsights/models/random_forest_model.pkl
+2025-08-21 08:58:40,299 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:58:40,312 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:58:40,312 - INFO - Predictions saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 08:58:40,676 - INFO - Prediction analysis plot saved to C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png
+2025-08-21 08:58:40,703 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:58:40,704 - INFO - Configuration loaded successfully
+2025-08-21 08:58:40,705 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:58:40,706 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 08:58:40,707 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:58:40,726 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 08:58:40,726 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:58:40,731 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 08:58:40,732 - INFO - Training prediction models...
+2025-08-21 08:58:40,732 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 08:58:40,734 - INFO - Configuration loaded successfully
+2025-08-21 08:58:40,735 - INFO - Preparing features table for prediction...
+2025-08-21 08:58:41,078 - INFO - Features table prepared with 364 columns
+2025-08-21 09:00:36,630 - INFO - Starting CrossInsights pipeline...
+2025-08-21 09:00:36,630 - INFO - Loading configuration...
+2025-08-21 09:00:36,630 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:36,632 - INFO - Configuration loaded successfully
+2025-08-21 09:00:36,633 - INFO - Loading raw data...
+2025-08-21 09:00:36,633 - INFO - Loading raw data...
+2025-08-21 09:00:36,633 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:36,635 - INFO - Configuration loaded successfully
+2025-08-21 09:00:36,635 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-21 09:00:36,642 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-21 09:00:36,642 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-21 09:00:36,645 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-21 09:00:36,646 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-21 09:00:36,658 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-21 09:00:36,658 - INFO - Raw data loaded successfully
+2025-08-21 09:00:36,659 - INFO - Preprocessing data...
+2025-08-21 09:00:36,659 - INFO - Preprocessing all datasets...
+2025-08-21 09:00:36,659 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:36,661 - INFO - Configuration loaded successfully
+2025-08-21 09:00:36,661 - INFO - Loading raw data...
+2025-08-21 09:00:36,661 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:36,664 - INFO - Configuration loaded successfully
+2025-08-21 09:00:36,664 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-21 09:00:36,667 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/users.csv
+2025-08-21 09:00:36,668 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-21 09:00:36,669 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/movies.csv
+2025-08-21 09:00:36,670 - INFO - Loading data from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-21 09:00:36,678 - INFO - Data loaded successfully from C:/crossinsights_project/crossinsights/data/raw/ratings.csv
+2025-08-21 09:00:36,678 - INFO - Raw data loaded successfully
+2025-08-21 09:00:36,678 - INFO - Cleaning users data...
+2025-08-21 09:00:36,679 - INFO - No missing values in users
+2025-08-21 09:00:36,683 - INFO - Users cleaned: age median filled, other missing values replaced with 'Unknown'
+2025-08-21 09:00:36,683 - INFO - Cleaning movies data...
+2025-08-21 09:00:36,684 - INFO - No missing values in movies
+2025-08-21 09:00:36,693 - INFO - Movies cleaned: 358 genres encoded
+2025-08-21 09:00:36,693 - INFO - Genre columns: ['Action', 'Action, Adventure', 'Action, Adventure, Animation', 'Action, Adventure, Horror', 'Action, Adventure, Romance', 'Action, Adventure, Sci-Fi', 'Action, Adventure, Thriller', 'Action, Animation', 'Action, Animation, Documentary', 'Action, Animation, Horror', 'Action, Animation, Romance', 'Action, Animation, Sci-Fi', 'Action, Comedy', 'Action, Comedy, Documentary', 'Action, Comedy, Horror', 'Action, Comedy, Thriller', 'Action, Documentary', 'Action, Documentary, Animation', 'Action, Documentary, Drama', 'Action, Documentary, Horror', 'Action, Documentary, Thriller', 'Action, Drama', 'Action, Drama, Adventure', 'Action, Drama, Thriller', 'Action, Horror', 'Action, Horror, Documentary', 'Action, Horror, Romance', 'Action, Horror, Sci-Fi', 'Action, Romance', 'Action, Romance, Drama', 'Action, Romance, Thriller', 'Action, Sci-Fi', 'Action, Sci-Fi, Animation', 'Action, Sci-Fi, Comedy', 'Action, Sci-Fi, Thriller', 'Action, Thriller', 'Action, Thriller, Documentary', 'Action, Thriller, Horror', 'Action, Thriller, Romance', 'Adventure', 'Adventure, Action', 'Adventure, Action, Comedy', 'Adventure, Action, Documentary', 'Adventure, Animation', 'Adventure, Animation, Comedy', 'Adventure, Animation, Documentary', 'Adventure, Animation, Thriller', 'Adventure, Comedy', 'Adventure, Comedy, Drama', 'Adventure, Comedy, Horror', 'Adventure, Comedy, Romance', 'Adventure, Documentary', 'Adventure, Documentary, Horror', 'Adventure, Documentary, Romance', 'Adventure, Drama, Documentary', 'Adventure, Drama, Horror', 'Adventure, Drama, Sci-Fi', 'Adventure, Horror', 'Adventure, Horror, Action', 'Adventure, Horror, Thriller', 'Adventure, Romance', 'Adventure, Romance, Action', 'Adventure, Romance, Drama', 'Adventure, Romance, Sci-Fi', 'Adventure, Romance, Thriller', 'Adventure, Sci-Fi, Action', 'Adventure, Sci-Fi, Comedy', 'Adventure, Sci-Fi, Thriller', 'Adventure, Thriller', 'Adventure, Thriller, Comedy', 'Adventure, Thriller, Romance', 'Animation', 'Animation, Action', 'Animation, Action, Adventure', 'Animation, Action, Documentary', 'Animation, Action, Drama', 'Animation, Adventure', 'Animation, Adventure, Romance', 'Animation, Comedy', 'Animation, Comedy, Documentary', 'Animation, Comedy, Horror', 'Animation, Documentary', 'Animation, Documentary, Action', 'Animation, Documentary, Drama', 'Animation, Documentary, Horror', 'Animation, Documentary, Romance', 'Animation, Drama', 'Animation, Drama, Adventure', 'Animation, Drama, Romance', 'Animation, Horror', 'Animation, Horror, Action', 'Animation, Horror, Adventure', 'Animation, Horror, Drama', 'Animation, Horror, Romance', 'Animation, Horror, Sci-Fi', 'Animation, Romance', 'Animation, Romance, Comedy', 'Animation, Romance, Documentary', 'Animation, Romance, Thriller', 'Animation, Sci-Fi', 'Animation, Sci-Fi, Comedy', 'Animation, Sci-Fi, Documentary', 'Animation, Sci-Fi, Romance', 'Animation, Sci-Fi, Thriller', 'Animation, Thriller', 'Animation, Thriller, Documentary', 'Animation, Thriller, Drama', 'Animation, Thriller, Horror', 'Comedy', 'Comedy, Action', 'Comedy, Action, Animation', 'Comedy, Adventure', 'Comedy, Adventure, Animation', 'Comedy, Animation', 'Comedy, Animation, Action', 'Comedy, Animation, Romance', 'Comedy, Documentary', 'Comedy, Documentary, Animation', 'Comedy, Documentary, Horror', 'Comedy, Documentary, Sci-Fi', 'Comedy, Drama', 'Comedy, Drama, Action', 'Comedy, Drama, Documentary', 'Comedy, Drama, Horror', 'Comedy, Horror', 'Comedy, Horror, Action', 'Comedy, Horror, Drama', 'Comedy, Horror, Sci-Fi', 'Comedy, Horror, Thriller', 'Comedy, Romance', 'Comedy, Romance, Animation', 'Comedy, Romance, Documentary', 'Comedy, Romance, Sci-Fi', 'Comedy, Sci-Fi', 'Comedy, Sci-Fi, Adventure', 'Comedy, Sci-Fi, Animation', 'Comedy, Sci-Fi, Documentary', 'Comedy, Sci-Fi, Romance', 'Comedy, Thriller', 'Comedy, Thriller, Adventure', 'Comedy, Thriller, Drama', 'Comedy, Thriller, Horror', 'Comedy, Thriller, Sci-Fi', 'Documentary', 'Documentary, Action', 'Documentary, Action, Adventure', 'Documentary, Action, Romance', 'Documentary, Adventure', 'Documentary, Adventure, Action', 'Documentary, Adventure, Comedy', 'Documentary, Adventure, Romance', 'Documentary, Animation', 'Documentary, Animation, Drama', 'Documentary, Animation, Horror', 'Documentary, Animation, Romance', 'Documentary, Animation, Sci-Fi', 'Documentary, Comedy', 'Documentary, Comedy, Action', 'Documentary, Comedy, Thriller', 'Documentary, Drama', 'Documentary, Drama, Action', 'Documentary, Drama, Adventure', 'Documentary, Drama, Thriller', 'Documentary, Horror', 'Documentary, Horror, Romance', 'Documentary, Romance', 'Documentary, Romance, Action', 'Documentary, Romance, Adventure', 'Documentary, Sci-Fi', 'Documentary, Sci-Fi, Adventure', 'Documentary, Sci-Fi, Comedy', 'Documentary, Sci-Fi, Horror', 'Documentary, Sci-Fi, Thriller', 'Documentary, Thriller', 'Documentary, Thriller, Adventure', 'Documentary, Thriller, Animation', 'Drama', 'Drama, Action', 'Drama, Action, Animation', 'Drama, Action, Documentary', 'Drama, Action, Horror', 'Drama, Action, Romance', 'Drama, Adventure', 'Drama, Adventure, Action', 'Drama, Adventure, Comedy', 'Drama, Adventure, Documentary', 'Drama, Adventure, Romance', 'Drama, Animation', 'Drama, Animation, Sci-Fi', 'Drama, Comedy', 'Drama, Comedy, Adventure', 'Drama, Comedy, Thriller', 'Drama, Documentary', 'Drama, Documentary, Romance', 'Drama, Documentary, Thriller', 'Drama, Horror, Action', 'Drama, Horror, Adventure', 'Drama, Horror, Comedy', 'Drama, Horror, Sci-Fi', 'Drama, Romance', 'Drama, Romance, Action', 'Drama, Romance, Adventure', 'Drama, Romance, Thriller', 'Drama, Sci-Fi', 'Drama, Sci-Fi, Comedy', 'Drama, Sci-Fi, Documentary', 'Drama, Thriller', 'Drama, Thriller, Action', 'Drama, Thriller, Documentary', 'Horror', 'Horror, Action', 'Horror, Action, Adventure', 'Horror, Action, Romance', 'Horror, Action, Sci-Fi', 'Horror, Adventure', 'Horror, Adventure, Action', 'Horror, Adventure, Comedy', 'Horror, Adventure, Documentary', 'Horror, Adventure, Romance', 'Horror, Adventure, Thriller', 'Horror, Animation', 'Horror, Animation, Action', 'Horror, Animation, Sci-Fi', 'Horror, Comedy', 'Horror, Comedy, Adventure', 'Horror, Comedy, Thriller', 'Horror, Documentary', 'Horror, Documentary, Action', 'Horror, Documentary, Adventure', 'Horror, Documentary, Comedy', 'Horror, Documentary, Drama', 'Horror, Documentary, Romance', 'Horror, Drama', 'Horror, Drama, Adventure', 'Horror, Drama, Comedy', 'Horror, Drama, Documentary', 'Horror, Romance', 'Horror, Romance, Action', 'Horror, Romance, Documentary', 'Horror, Romance, Thriller', 'Horror, Sci-Fi', 'Horror, Sci-Fi, Adventure', 'Horror, Sci-Fi, Animation', 'Horror, Sci-Fi, Romance', 'Horror, Thriller', 'Horror, Thriller, Sci-Fi', 'Romance', 'Romance, Action', 'Romance, Action, Comedy', 'Romance, Action, Drama', 'Romance, Action, Sci-Fi', 'Romance, Adventure', 'Romance, Adventure, Comedy', 'Romance, Adventure, Thriller', 'Romance, Animation', 'Romance, Animation, Adventure', 'Romance, Animation, Comedy', 'Romance, Animation, Documentary', 'Romance, Animation, Drama', 'Romance, Animation, Thriller', 'Romance, Comedy', 'Romance, Comedy, Animation', 'Romance, Comedy, Documentary', 'Romance, Comedy, Sci-Fi', 'Romance, Comedy, Thriller', 'Romance, Documentary', 'Romance, Documentary, Action', 'Romance, Documentary, Animation', 'Romance, Documentary, Horror', 'Romance, Documentary, Thriller', 'Romance, Drama', 'Romance, Drama, Action', 'Romance, Horror', 'Romance, Horror, Action', 'Romance, Horror, Documentary', 'Romance, Horror, Drama', 'Romance, Sci-Fi, Adventure', 'Romance, Sci-Fi, Comedy', 'Romance, Sci-Fi, Documentary', 'Romance, Sci-Fi, Drama', 'Romance, Thriller', 'Romance, Thriller, Action', 'Romance, Thriller, Adventure', 'Romance, Thriller, Drama', 'Romance, Thriller, Horror', 'Romance, Thriller, Sci-Fi', 'Sci-Fi', 'Sci-Fi, Action', 'Sci-Fi, Action, Thriller', 'Sci-Fi, Adventure', 'Sci-Fi, Adventure, Action', 'Sci-Fi, Adventure, Comedy', 'Sci-Fi, Adventure, Drama', 'Sci-Fi, Adventure, Horror', 'Sci-Fi, Animation', 'Sci-Fi, Animation, Action', 'Sci-Fi, Animation, Adventure', 'Sci-Fi, Animation, Comedy', 'Sci-Fi, Animation, Horror', 'Sci-Fi, Comedy', 'Sci-Fi, Comedy, Adventure', 'Sci-Fi, Comedy, Animation', 'Sci-Fi, Comedy, Documentary', 'Sci-Fi, Comedy, Thriller', 'Sci-Fi, Documentary', 'Sci-Fi, Documentary, Action', 'Sci-Fi, Documentary, Drama', 'Sci-Fi, Drama', 'Sci-Fi, Drama, Animation', 'Sci-Fi, Horror', 'Sci-Fi, Horror, Action', 'Sci-Fi, Horror, Thriller', 'Sci-Fi, Romance', 'Sci-Fi, Romance, Action', 'Sci-Fi, Romance, Animation', 'Sci-Fi, Romance, Comedy', 'Sci-Fi, Romance, Documentary', 'Sci-Fi, Romance, Horror', 'Sci-Fi, Romance, Thriller', 'Sci-Fi, Thriller', 'Sci-Fi, Thriller, Action', 'Sci-Fi, Thriller, Animation', 'Sci-Fi, Thriller, Drama', 'Sci-Fi, Thriller, Horror', 'Thriller', 'Thriller, Action', 'Thriller, Action, Adventure', 'Thriller, Action, Animation', 'Thriller, Action, Romance', 'Thriller, Adventure', 'Thriller, Adventure, Action', 'Thriller, Adventure, Comedy', 'Thriller, Adventure, Documentary', 'Thriller, Adventure, Drama', 'Thriller, Animation', 'Thriller, Animation, Romance', 'Thriller, Comedy', 'Thriller, Comedy, Adventure', 'Thriller, Comedy, Romance', 'Thriller, Documentary', 'Thriller, Documentary, Adventure', 'Thriller, Documentary, Drama', 'Thriller, Documentary, Horror', 'Thriller, Documentary, Romance', 'Thriller, Drama', 'Thriller, Drama, Adventure', 'Thriller, Drama, Horror', 'Thriller, Horror', 'Thriller, Horror, Adventure', 'Thriller, Horror, Animation', 'Thriller, Horror, Documentary', 'Thriller, Romance', 'Thriller, Romance, Action', 'Thriller, Romance, Adventure', 'Thriller, Romance, Horror', 'Thriller, Romance, Sci-Fi', 'Thriller, Sci-Fi', 'Thriller, Sci-Fi, Animation']
+2025-08-21 09:00:36,694 - INFO - Cleaning ratings data...
+2025-08-21 09:00:36,695 - INFO - No missing values in ratings
+2025-08-21 09:00:36,704 - WARNING - Found 405 duplicate user-movie pairs. Aggregating by mean rating.
+2025-08-21 09:00:36,710 - INFO - Ratings cleaned: 0 invalid ratings clipped
+2025-08-21 09:00:36,710 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 09:00:36,714 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/users_clean.csv
+2025-08-21 09:00:36,714 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 09:00:36,755 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv
+2025-08-21 09:00:36,756 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 09:00:36,773 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv
+2025-08-21 09:00:36,773 - INFO - All datasets preprocessed and saved
+2025-08-21 09:00:36,773 - INFO - Performing exploratory data analysis...
+2025-08-21 09:00:36,774 - INFO - Generating rating distribution plot
+2025-08-21 09:00:37,024 - INFO - Rating distribution plot saved to C:/crossinsights_project/crossinsights/analysis/rating_distribution.png
+2025-08-21 09:00:37,024 - INFO - Generating genre popularity plot
+2025-08-21 09:00:38,168 - INFO - Genre popularity plot saved to C:/crossinsights_project/crossinsights/analysis/genre_popularity.png
+2025-08-21 09:00:38,168 - INFO - Generating age vs ratings plot
+2025-08-21 09:00:38,300 - INFO - Age vs ratings plot saved to C:/crossinsights_project/crossinsights/analysis/age_vs_ratings.png
+2025-08-21 09:00:38,300 - INFO - Running KNN recommendations...
+2025-08-21 09:00:38,301 - INFO - Running user-user KNN recommendations...
+2025-08-21 09:00:38,301 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:38,303 - INFO - Configuration loaded successfully
+2025-08-21 09:00:38,303 - INFO - Building user-item matrix...
+2025-08-21 09:00:38,318 - INFO - User-item matrix created with shape: (500, 1000)
+2025-08-21 09:00:38,319 - INFO - Computing cosine similarity for users...
+2025-08-21 09:00:38,326 - INFO - User-user similarity computed
+2025-08-21 09:00:38,327 - INFO - Computing cosine similarity for items...
+2025-08-21 09:00:38,338 - INFO - Item-item similarity computed
+2025-08-21 09:00:38,338 - INFO - Saving KNN model to C:/crossinsights_project/crossinsights/models/knn_model.pkl
+2025-08-21 09:00:38,352 - INFO - KNN model saved to C:/crossinsights_project/crossinsights/models/knn_model.pkl
+2025-08-21 09:00:38,352 - INFO - Generating user-user recommendations for user 1
+2025-08-21 09:00:38,353 - INFO - Top 5 neighbors for user 1: [152, 328, 22, 404, 439]
+2025-08-21 09:00:38,630 - INFO - Generated 10 recommendations for user 1
+2025-08-21 09:00:38,631 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv
+2025-08-21 09:00:38,632 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv
+2025-08-21 09:00:38,632 - INFO - Generating similarity distribution plot
+2025-08-21 09:00:39,438 - INFO - Similarity distribution plot saved to C:/crossinsights_project/crossinsights/analysis/knn_analysis.png
+2025-08-21 09:00:39,438 - INFO - user-user KNN recommendations completed for user 1
+2025-08-21 09:00:39,451 - INFO - KNN recommendations for user 1:
+     movie_id  predicted_rating
+1          18               5.0
+9          89               5.0
+6          67               5.0
+18        137               5.0
+16        135               5.0
+17        136               5.0
+54        352               5.0
+113       773               5.0
+144       957               5.0
+142       953               5.0
+2025-08-21 09:00:39,451 - INFO - Training SVD model...
+2025-08-21 09:00:39,451 - INFO - Training SVD model...
+2025-08-21 09:00:39,451 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:39,453 - INFO - Configuration loaded successfully
+2025-08-21 09:00:39,873 - INFO - SVD model trained and saved to C:/crossinsights_project/crossinsights/models/svd_model.pkl
+2025-08-21 09:00:39,874 - INFO - Generating SVD recommendations...
+2025-08-21 09:00:39,874 - INFO - Generating recommendations for user 1
+2025-08-21 09:00:39,882 - INFO - Top 10 recommendations generated for user 1
+2025-08-21 09:00:39,885 - INFO - Top 10 SVD recommendations for user 1:
+     movie_id     score
+812       813  2.269520
+902       903  2.201815
+855       856  1.902734
+891       892  1.803733
+169       170  1.773365
+492       493  1.757545
+530       531  1.715292
+550       551  1.667172
+719       720  1.455572
+994       995  1.254168
+2025-08-21 09:00:39,885 - INFO - Training prediction models...
+2025-08-21 09:00:39,885 - INFO - Training prediction models...
+2025-08-21 09:00:39,886 - INFO - Loading configuration from C:\crossinsights_project\crossinsights\config\config.yaml
+2025-08-21 09:00:39,888 - INFO - Configuration loaded successfully
+2025-08-21 09:00:39,888 - INFO - Preparing features table for prediction...
+2025-08-21 09:00:40,416 - INFO - Features table prepared with 364 columns
+2025-08-21 09:00:50,550 - INFO - Linear Regression model saved to C:/crossinsights_project/crossinsights/models/linear_regression_model.pkl
+2025-08-21 09:00:50,550 - INFO - Random Forest model saved to C:/crossinsights_project/crossinsights/models/random_forest_model.pkl
+2025-08-21 09:00:50,551 - INFO - Saving processed data to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 09:00:50,565 - INFO - Processed data saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 09:00:50,566 - INFO - Predictions saved to C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv
+2025-08-21 09:00:50,776 - INFO - Prediction analysis plot saved to C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png
+2025-08-21 09:00:50,787 - INFO - Prediction models trained and predictions saved.
+2025-08-21 09:00:50,787 - INFO - Pipeline Summary:
+2025-08-21 09:00:50,787 - INFO - Data Loaded: Success
+2025-08-21 09:00:50,787 - INFO - Data Preprocessed: Success
+2025-08-21 09:00:50,787 - INFO - Eda Completed: Success
+2025-08-21 09:00:50,788 - INFO - Knn Recommendations: Success
+2025-08-21 09:00:50,788 - INFO - Model Trained: Success
+2025-08-21 09:00:50,788 - INFO - Recommendations Generated: Success
+2025-08-21 09:00:50,788 - INFO - Predictors Trained: Success
+2025-08-21 09:00:50,788 - INFO - Pipeline completed successfully!

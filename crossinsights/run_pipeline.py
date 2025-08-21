@@ -1,4 +1,3 @@
-# crossinsights/run_pipeline.py
 import logging
 import sys
 import argparse
@@ -6,11 +5,12 @@ from pathlib import Path
 from crossinsights.utils.data_loader import load_raw_data, load_config
 from crossinsights.utils.preprocessing import preprocess_all
 from crossinsights.utils.eda_tools import plot_rating_distribution, plot_genre_popularity, plot_age_vs_ratings
-from crossinsights.utils.knn_recommender import run_knn_recommendations  # جديد
+from crossinsights.utils.knn_recommender import run_knn_recommendations
 from crossinsights.models.placeholder import train_model, predict
+from crossinsights.models.predictors import train_predictors  # جديد
 
 def setup_logging():
-    """Set up logging Patient logging configuration."""
+    """Set up logging configuration."""
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
@@ -34,9 +34,10 @@ def run_pipeline(stages=None):
         'data_loaded': False,
         'data_preprocessed': False,
         'eda_completed': False,
-        'knn_recommendations': False,  # جديد
+        'knn_recommendations': False,
         'model_trained': False,
-        'recommendations_generated': False
+        'recommendations_generated': False,
+        'predictors_trained': False  # جديد
     }
 
     try:
@@ -46,7 +47,7 @@ def run_pipeline(stages=None):
             config = load_config()
             summary['data_loaded'] = True
 
-        # newly added Step 2: Load raw data
+        # Step 2: Load raw data
         if not stages or 'load_data' in stages:
             logger.info("Loading raw data...")
             users, movies, ratings = load_raw_data()
@@ -66,16 +67,16 @@ def run_pipeline(stages=None):
             plot_age_vs_ratings(users_clean, ratings_clean)
             summary['eda_completed'] = True
 
-        # Step 5: Run KNN Recommendations (جديد)
+        # Step 5: Run KNN Recommendations
         if not stages or 'knn_recommendations' in stages:
             logger.info("Running KNN recommendations...")
             knn_recommendations = run_knn_recommendations(ratings_clean, user_id=1, n_recommendations=10, mode='user-user')
             logger.info(f"KNN recommendations for user 1:\n{knn_recommendations}")
             summary['knn_recommendations'] = True
 
-        # Step 6: Train model
+        # Step 6: Train SVD model
         if not stages or 'train_model' in stages:
-            logger.info("Training model...")
+            logger.info("Training SVD model...")
             svd_model = train_model(ratings_clean)
             summary['model_trained'] = True
 
@@ -85,6 +86,13 @@ def run_pipeline(stages=None):
             recommendations = predict(svd_model, ratings_clean, user_id=1, n_recommendations=10)
             logger.info(f"Top 10 SVD recommendations for user 1:\n{recommendations}")
             summary['recommendations_generated'] = True
+
+        # Step 8: Train prediction models (جديد)
+        if not stages or 'train_predictors' in stages:
+            logger.info("Training prediction models...")
+            lr_model, rf_model, predictions_df = train_predictors(users_clean, movies_clean, ratings_clean)
+            logger.info(f"Prediction models trained and predictions saved.")
+            summary['predictors_trained'] = True
 
         # Print summary
         logger.info("Pipeline Summary:")
@@ -98,13 +106,8 @@ def run_pipeline(stages=None):
         raise
 
 if __name__ == '__main__':
-    # Ensure the project roots is in sys.path
     sys.path.append(str(Path('C:/crossinsights_project')))
-
-    # Parse command-line arguments
     parser = argparse.ArgumentParser(description="Run the CrossInsights pipeline")
-    parser.add_argument('--stages', nargs='*', choices=['load_config', 'load_data', 'preprocess', 'eda', 'knn_recommendations', 'train_model', 'predict'],  # تحديث
-                        help="Specific stages to run (default: all)")
+    parser.add_argument('--stages', nargs='*', choices=['load_config', 'load_data', 'preprocess', 'eda', 'knn_recommendations', 'train_model', 'predict', 'train_predictors'], help="Specific stages to run (default: all)")
     args = parser.parse_args()
-
     run_pipeline(stages=args.stages)

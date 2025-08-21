@@ -9,16 +9,25 @@ data:
     users: "C:/crossinsights_project/crossinsights/data/processed/users_clean.csv"
     movies: "C:/crossinsights_project/crossinsights/data/processed/movies_clean.csv"
     ratings: "C:/crossinsights_project/crossinsights/data/processed/ratings_clean.csv"
-    knn_recommendations: "C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv" # جديد
+    knn_recommendations: "C:/crossinsights_project/crossinsights/data/processed/knn_recommendations.csv"
+    predicted_ratings: "C:/crossinsights_project/crossinsights/data/processed/predicted_ratings.csv" # جديد
 
 models:
   output_dir: "C:/crossinsights_project/crossinsights/models/"
   svd:
     n_factors: 100
     n_epochs: 20
-  knn: # جديد
+  knn:
     k_neighbors: 5
     similarity_metric: "cosine"
+  linear_regression: # جديد
+    fit_intercept: true
+  random_forest: # جديد
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
 
 eda:
-  notebook: " 更新 C:/crossinsights_project/crossinsights/analysis/eda.ipynb"
+  notebook: "C:/crossinsights_project/crossinsights/analysis/eda.ipynb"
+analysis:
+  predictors: "C:/crossinsights_project/crossinsights/analysis/predictors_analysis.png" # جديد
